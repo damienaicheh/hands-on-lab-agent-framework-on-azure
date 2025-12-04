@@ -53,7 +53,7 @@ code --install-extension ms-python.vscode-pylance
 
 ## 🚀 Deploy the infrastructure
 
-First, you need to initialize the terraform infrastructure by running the following command:
+First, you need to initialize the Terraform infrastructure by running the following command:
 
 Login to your Azure account if you haven't already:
 
