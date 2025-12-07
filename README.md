@@ -1,12 +1,35 @@
 # Agent Framework on Azure - Hands-On Lab
 
-Welcome to this hands-on lab! You will learn how to build agentic applications using the Agent Framework on Azure.
+Welcome to this hands-on lab! Build a complete **Helpdesk Ops Assistant** using the Microsoft Agent Framework on Azure.
+
+## 🎯 What You'll Build
+
+A mini-helpdesk powered by AI agents that processes internal tickets using:
+
+- 🔍 **Azure AI Search** for enterprise FAQ knowledge
+- 🔧 **MCP Servers** for GitHub ticketing and Microsoft Learn documentation
+- 🤖 **Multi-agent orchestration** with Microsoft Agent Framework
+- 📊 **Observability** with OpenTelemetry and Azure AI Foundry
 
 ## 📚 Workshop
 
 Access the full workshop documentation: [Workshop Guide](docs/workshop.md)
 
 Or view it online: `https://aka.ms/ws?src=gh:microsoft/hands-on-lab-agent-framework-on-azure/docs/`
+
+## 📋 Workshop Modules
+
+| Module | Topic | Duration |
+|--------|-------|----------|
+| 1 | Creating a Simple Agent | 20 min |
+| 2 | Complexity Analysis Agent | 25 min |
+| 3 | Function Tools | 30 min |
+| 4 | Knowledge Integration (Foundry IQ) | 30 min |
+| 5 | Group Chat Workflow | 35 min |
+| 6 | Advanced Orchestration | 30 min |
+| 7 | Observability | 25 min |
+| 8 | Evaluation | 30 min |
+| 9 | Redis Integration | 25 min |
 
 ## 📋 Prerequisites
 
@@ -18,6 +41,7 @@ Or view it online: `https://aka.ms/ws?src=gh:microsoft/hands-on-lab-agent-framew
 | **Terraform** | Infrastructure as Code | [Install](https://learn.microsoft.com/azure/developer/terraform/quickstart-configure) |
 | **Git** | Version control | [Install](https://learn.microsoft.com/devops/develop/git/install-and-set-up-git) |
 | **VS Code** | Code editor | [Download](https://code.visualstudio.com/download) |
+| **Python 3.11+** | Python runtime | [Download](https://www.python.org/downloads/) |
 
 **Quick install (Windows PowerShell):**
 
@@ -26,6 +50,7 @@ winget install -e --id Microsoft.AzureCLI
 winget install -e --id Hashicorp.Terraform
 winget install -e --id Git.Git
 winget install -e --id Microsoft.VisualStudioCode
+winget install -e --id Python.Python.3.11
 ```
 
 ### VS Code Extensions
@@ -92,3 +117,53 @@ Then run the following command to deploy the infrastructure:
 # Apply the deployment directly
 terraform apply -auto-approve
 ```
+
+## 🐍 Python Environment Setup
+
+```bash
+# Create virtual environment
+python -m venv .venv
+
+# Activate (Windows)
+.venv\Scripts\activate
+
+# Activate (Linux/Mac)
+source .venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Copy environment template
+cp .env.template .env
+# Edit .env with your Azure resource values from Terraform outputs
+```
+
+## 📁 Project Structure
+
+```text
+├── docs/
+│   └── workshop.md          # Full workshop guide (MOAW format)
+├── infra/
+│   └── *.tf                 # Terraform infrastructure
+├── src/
+│   ├── module1_simple_agent.py
+│   ├── module2_complexity_analyst.py
+│   ├── module3_function_tools.py
+│   ├── module4_knowledge_integration.py
+│   ├── module5_group_chat.py
+│   ├── module6_orchestration.py
+│   ├── module7_observability.py
+│   ├── module8_evaluation.py
+│   └── module9_redis.py
+├── requirements.txt
+├── .env.template
+└── README.md
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open an issue or pull request.
+
+## 📄 License
+
+This project is licensed under the MIT License.

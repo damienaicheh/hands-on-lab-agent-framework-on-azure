@@ -1,0 +1,16 @@
+# Microsoft Agent Framework
+agent-framework[azure,redis,viz]
+
+# Azure SDK
+azure-identity
+azure-monitor-opentelemetry
+
+# OpenTelemetry
+opentelemetry-api
+opentelemetry-sdk
+
+# Data validation
+pydantic>=2.0
+
+# Utilities
+python-dotenv
