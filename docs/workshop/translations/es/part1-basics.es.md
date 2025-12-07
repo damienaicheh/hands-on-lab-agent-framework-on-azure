@@ -12,7 +12,7 @@ contacts:
 duration_minutes: 70
 tags: requisitos, terraform, agente-simple, salida-estructurada, herramientas
 banner_url: ../../../assets/banner.jpg
-navigation_levels: 2
+navigation_levels: 1
 sections_title:
   - Introducción
   - Requisitos Previos

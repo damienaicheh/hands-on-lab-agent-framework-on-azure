@@ -12,7 +12,7 @@ contacts:
 duration_minutes: 50
 tags: redis, memory, persistence, conclusion
 banner_url: ../../../assets/banner.jpg
-navigation_levels: 2
+navigation_levels: 1
 sections_title:
   - परिचय
   - भाग 1-3 का कोड

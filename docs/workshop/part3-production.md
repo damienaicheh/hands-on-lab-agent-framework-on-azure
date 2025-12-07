@@ -12,7 +12,7 @@ contacts:
 duration_minutes: 60
 tags: orchestration, observability, opentelemetry, evaluation, production, handoff
 banner_url: ../assets/banner.jpg
-navigation_levels: 2
+navigation_levels: 1
 sections_title:
   - Introduction
   - Code from Parts 1-2

@@ -12,7 +12,7 @@ contacts:
 duration_minutes: 90
 tags: handoff, orchestration, opentelemetry, observability, evaluation, testing
 banner_url: ../../../assets/banner.jpg
-navigation_levels: 2
+navigation_levels: 1
 sections_title:
   - परिचय
   - भाग 1-2 का कोड

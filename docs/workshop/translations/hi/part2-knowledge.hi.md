@@ -12,7 +12,7 @@ contacts:
 duration_minutes: 60
 tags: rag, azure-ai-search, multi-agent, mcp, group-chat
 banner_url: ../../../assets/banner.jpg
-navigation_levels: 2
+navigation_levels: 1
 sections_title:
   - परिचय
   - भाग 1 का कोड

@@ -12,7 +12,7 @@ contacts:
 duration_minutes: 70
 tags: prerequisites, terraform, simple-agent, structured-output, tools
 banner_url: ../../../assets/banner.jpg
-navigation_levels: 2
+navigation_levels: 1
 sections_title:
   - परिचय
   - पूर्वापेक्षाएं

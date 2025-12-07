@@ -12,7 +12,7 @@ contacts:
 duration_minutes: 65
 tags: orquestación, handoff, opentelemetry, evaluación, producción
 banner_url: ../../../assets/banner.jpg
-navigation_levels: 2
+navigation_levels: 1
 sections_title:
   - Introducción
   - Código de las Partes 1-2

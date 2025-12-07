@@ -12,7 +12,7 @@ contacts:
 duration_minutes: 55
 tags: rag, ai-search, group-chat, mcp, multi-agente
 banner_url: ../../../assets/banner.jpg
-navigation_levels: 2
+navigation_levels: 1
 sections_title:
   - Introducción
   - Código de la Parte 1

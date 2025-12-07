@@ -14,7 +14,7 @@ contacts:
   - "@damienaicheh"
 duration_minutes: 75
 tags: agent framework, azure openai, pydantic, function tools
-navigation_levels: 2
+navigation_levels: 1
 banner_url: ../assets/banner.jpg
 sections_title:
   - Introduction

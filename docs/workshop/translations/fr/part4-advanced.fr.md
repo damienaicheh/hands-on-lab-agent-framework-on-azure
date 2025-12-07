@@ -12,7 +12,7 @@ contacts:
 duration_minutes: 45
 tags: redis, persistance, architecture, production, ressources, conclusion
 banner_url: ../../../assets/banner.jpg
-navigation_levels: 2
+navigation_levels: 1
 sections_title:
   - Introduction
   - Code des Parties 1-3

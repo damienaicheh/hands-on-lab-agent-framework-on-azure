@@ -12,7 +12,7 @@ contacts:
 duration_minutes: 45
 tags: redis, persistencia, arquitectura, producción, recursos, conclusión
 banner_url: ../../../assets/banner.jpg
-navigation_levels: 2
+navigation_levels: 1
 sections_title:
   - Introducción
   - Código de las Partes 1-3

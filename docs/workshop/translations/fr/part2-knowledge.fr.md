@@ -12,7 +12,7 @@ contacts:
 duration_minutes: 55
 tags: rag, azure-ai-search, group-chat, mcp, multi-agent
 banner_url: ../../../assets/banner.jpg
-navigation_levels: 2
+navigation_levels: 1
 sections_title:
   - Introduction
   - Code de la Partie 1
