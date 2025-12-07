@@ -116,17 +116,17 @@ El taller está dividido en **4 partes** para facilitar la navegación:
 > **🚀 ¿Primera vez?** Empieza con [Parte 1: Los Fundamentos](./part1-basics.es.md)
 >
 > **🔍 ¿Necesitas un tema específico?** Salta directamente a:
-> - [Requisitos y Configuración](./part1-basics.es.md#requisitos-previos)
-> - [Módulo 1: Agente Simple](./part1-basics.es.md#módulo-1--agente-simple)
-> - [Módulo 2: Salida Estructurada](./part1-basics.es.md#módulo-2--salida-estructurada)
-> - [Módulo 3: Herramientas de Función](./part1-basics.es.md#módulo-3--herramientas-de-función)
-> - [Módulo 4: AI Search / RAG](./part2-knowledge.es.md#módulo-4--integración-azure-ai-search)
-> - [Módulo 5: Group Chat](./part2-knowledge.es.md#módulo-5--group-chat-multi-agente-con-mcp)
-> - [Módulo 6: Orquestación](./part3-production.es.md#módulo-6--orquestación-handoff)
-> - [Módulo 7: Observabilidad](./part3-production.es.md#módulo-7--observabilidad-opentelemetry)
-> - [Módulo 8: Evaluación](./part3-production.es.md#módulo-8--evaluación-y-pruebas)
-> - [Módulo 9: Redis](./part4-advanced.es.md#módulo-9--integración-redis)
-> - [Conclusión y Recursos](./part4-advanced.es.md#conclusión)
+> - [Requisitos y Configuración](./part1-basics.es.md?step=1)
+> - [Módulo 1: Agente Simple](./part1-basics.es.md?step=3)
+> - [Módulo 2: Salida Estructurada](./part1-basics.es.md?step=4)
+> - [Módulo 3: Herramientas de Función](./part1-basics.es.md?step=5)
+> - [Módulo 4: AI Search / RAG](./part2-knowledge.es.md?step=2)
+> - [Módulo 5: Group Chat](./part2-knowledge.es.md?step=3)
+> - [Módulo 6: Orquestación](./part3-production.es.md?step=2)
+> - [Módulo 7: Observabilidad](./part3-production.es.md?step=3)
+> - [Módulo 8: Evaluación](./part3-production.es.md?step=4)
+> - [Módulo 9: Redis](./part4-advanced.es.md?step=2)
+> - [Conclusión y Recursos](./part4-advanced.es.md?step=3)
 
 </div>
 

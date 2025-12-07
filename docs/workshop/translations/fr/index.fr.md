@@ -116,17 +116,17 @@ L'atelier se compose de **4 parties** pour faciliter la navigation :
 > **🚀 Première visite ?** Commencez par [Partie 1 : Les fondamentaux](./part1-basics.fr.md)
 >
 > **🔍 Besoin d'un sujet précis ?** Accédez directement à :
-> - [Prérequis et configuration](./part1-basics.fr.md#prérequis)
-> - [Module 1 : Agent simple](./part1-basics.fr.md#module-1--agent-simple)
-> - [Module 2 : Sortie structurée](./part1-basics.fr.md#module-2--sortie-structurée)
-> - [Module 3 : Outils fonction](./part1-basics.fr.md#module-3--outils-fonction)
-> - [Module 4 : AI Search / RAG](./part2-knowledge.fr.md#module-4--intégration-azure-ai-search)
-> - [Module 5 : Group Chat](./part2-knowledge.fr.md#module-5--group-chat-multi-agent)
-> - [Module 6 : Orchestration](./part3-production.fr.md#module-6--orchestration-avancée)
-> - [Module 7 : Observabilité](./part3-production.fr.md#module-7--observabilité)
-> - [Module 8 : Évaluation](./part3-production.fr.md#module-8--évaluation)
-> - [Module 9 : Redis](./part4-advanced.fr.md#module-9--intégration-redis)
-> - [Conclusion et ressources](./part4-advanced.fr.md#conclusion)
+> - [Prérequis et configuration](./part1-basics.fr.md?step=1)
+> - [Module 1 : Agent simple](./part1-basics.fr.md?step=3)
+> - [Module 2 : Sortie structurée](./part1-basics.fr.md?step=4)
+> - [Module 3 : Outils fonction](./part1-basics.fr.md?step=5)
+> - [Module 4 : AI Search / RAG](./part2-knowledge.fr.md?step=2)
+> - [Module 5 : Group Chat](./part2-knowledge.fr.md?step=3)
+> - [Module 6 : Orchestration](./part3-production.fr.md?step=2)
+> - [Module 7 : Observabilité](./part3-production.fr.md?step=3)
+> - [Module 8 : Évaluation](./part3-production.fr.md?step=4)
+> - [Module 9 : Redis](./part4-advanced.fr.md?step=2)
+> - [Conclusion et ressources](./part4-advanced.fr.md?step=3)
 
 </div>
 

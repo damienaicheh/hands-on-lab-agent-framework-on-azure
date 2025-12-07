@@ -71,17 +71,17 @@ This workshop is divided into **4 parts** for easier navigation:
 > **🚀 First time?** Start with [Part 1: Getting Started](./part1-basics.md)
 >
 > **🔍 Need a specific topic?** Jump directly to:
-> - [Prerequisites & Setup](./part1-basics.md#prerequisites)
-> - [Module 1: Simple Agent](./part1-basics.md#module-1--simple-agent)
-> - [Module 2: Structured Output](./part1-basics.md#module-2--structured-output)
-> - [Module 3: Function Tools](./part1-basics.md#module-3--function-tools)
-> - [Module 4: AI Search / RAG](./part2-knowledge.md#module-4--knowledge-integration)
-> - [Module 5: Group Chat](./part2-knowledge.md#module-5--group-chat-workflow)
-> - [Module 6: Orchestration](./part3-production.md#module-6--advanced-orchestration)
-> - [Module 7: Observability](./part3-production.md#module-7--observability)
-> - [Module 8: Evaluation](./part3-production.md#module-8--evaluation)
-> - [Module 9: Redis](./part4-advanced.md#module-9--redis-integration)
-> - [Conclusion & Resources](./part4-advanced.md#conclusion)
+> - [Prerequisites & Setup](./part1-basics.md?step=1)
+> - [Module 1: Simple Agent](./part1-basics.md?step=3)
+> - [Module 2: Structured Output](./part1-basics.md?step=4)
+> - [Module 3: Function Tools](./part1-basics.md?step=5)
+> - [Module 4: AI Search / RAG](./part2-knowledge.md?step=2)
+> - [Module 5: Group Chat](./part2-knowledge.md?step=3)
+> - [Module 6: Orchestration](./part3-production.md?step=2)
+> - [Module 7: Observability](./part3-production.md?step=3)
+> - [Module 8: Evaluation](./part3-production.md?step=4)
+> - [Module 9: Redis](./part4-advanced.md?step=2)
+> - [Conclusion & Resources](./part4-advanced.md?step=3)
 
 </div>
 
