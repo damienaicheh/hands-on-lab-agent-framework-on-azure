@@ -11,9 +11,10 @@ contacts:
   - "@olivMertens"
 duration_minutes: 65
 tags: orquestación, handoff, opentelemetry, evaluación, producción
-banner_url: ../../../assets/banner.jpg
+banner_url: ../../assets/banner.jpg
 navigation_levels: 1
 sections_title:
+  - Introducción
   - 🏠 Navegación
   - Código de las Partes 1-2
   - Módulo 6 - Orquestación
@@ -24,7 +25,7 @@ sections_title:
 
 # Parte 3: Listo para Producción
 
-![Banner del Taller](../../../assets/banner.jpg)
+![Banner del Taller](../../assets/banner.jpg)
 
 > 🌍 **[← Parte 2: Conocimiento](./part2-knowledge.es.md)** | **[Parte 4 →](./part4-advanced.es.md)**
 

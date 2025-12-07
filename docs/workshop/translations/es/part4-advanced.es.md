@@ -11,9 +11,10 @@ contacts:
   - "@olivMertens"
 duration_minutes: 45
 tags: redis, persistencia, arquitectura, producción, recursos, conclusión
-banner_url: ../../../assets/banner.jpg
+banner_url: ../../assets/banner.jpg
 navigation_levels: 1
 sections_title:
+  - Introducción
   - 🏠 Navegación
   - Código de las Partes 1-3
   - Módulo 9 - Redis
@@ -23,7 +24,7 @@ sections_title:
 
 # Parte 4: Avanzado y Recursos
 
-![Banner del Taller](../../../assets/banner.jpg)
+![Banner del Taller](../../assets/banner.jpg)
 
 > 🌍 **[← Parte 3: Producción](part3-production.es.md)** | **[🏠 Inicio del Taller](index.es.md)**
 

@@ -11,9 +11,10 @@ contacts:
   - "@olivMertens"
 duration_minutes: 55
 tags: rag, azure-ai-search, group-chat, mcp, multi-agent
-banner_url: ../../../assets/banner.jpg
+banner_url: ../../assets/banner.jpg
 navigation_levels: 1
 sections_title:
+  - Introduction
   - 🏠 Navigation
   - Code de la Partie 1
   - Module 4 - Azure AI Search
@@ -23,7 +24,7 @@ sections_title:
 
 # Partie 2 : Gestion des connaissances
 
-![Banner Workshop](../../../assets/banner.jpg)
+![Banner Workshop](../../assets/banner.jpg)
 
 > 🌍 **[← Partie 1 : Les fondamentaux](./part1-basics.fr.md)** | **[Partie 3 : Prêt pour la production →](./part3-production.fr.md)**
 
@@ -46,10 +47,6 @@ sections_title:
 > - [🇮🇳 हिन्दी](/workshop/translations/hi/part2-knowledge.hi.md)
 
 </div>
-
----
-
-Dans cette partie, vous allez enrichir vos agents avec des connaissances et de la collaboration.
 
 ---
 

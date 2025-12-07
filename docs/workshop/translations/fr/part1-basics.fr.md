@@ -11,9 +11,10 @@ contacts:
   - "@olivMertens"
 duration_minutes: 70
 tags: agent-framework, azure, setup, agent, streaming, pydantic, outils
-banner_url: ../../../assets/banner.jpg
+banner_url: ../../assets/banner.jpg
 navigation_levels: 1
 sections_title:
+  - Introduction
   - 🏠 Navigation
   - Prérequis
   - Déploiement
@@ -25,7 +26,7 @@ sections_title:
 
 # Partie 1 : Les fondamentaux
 
-![Banner Workshop](../../../assets/banner.jpg)
+![Banner Workshop](../../assets/banner.jpg)
 
 > 🌍 **[🏠 Accueil](./index.fr.md)** | **[Partie 2 : Gestion des connaissances →](./part2-knowledge.fr.md)**
 
@@ -51,16 +52,6 @@ sections_title:
 
 ---
 
-Bienvenue ! Dans cette partie, vous allez :
-
-| Étape | Ce que vous apprendrez |
-|-------|------------------------|
-| **Mise en place** | Installer les outils et déployer l'infrastructure Azure |
-| **Module 1** | Créer un agent simple avec streaming |
-| **Module 2** | Obtenir des réponses structurées avec Pydantic |
-| **Module 3** | Ajouter des outils personnalisés |
-
----
 
 ## Prérequis
 

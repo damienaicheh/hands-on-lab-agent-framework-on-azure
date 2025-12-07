@@ -11,9 +11,10 @@ contacts:
   - "@olivMertens"
 duration_minutes: 60
 tags: rag, azure-ai-search, multi-agent, mcp, group-chat
-banner_url: ../../../assets/banner.jpg
+banner_url: ../../assets/banner.jpg
 navigation_levels: 1
 sections_title:
+  - परिचय
   - 🏠 नेविगेशन
   - भाग 1 का कोड
   - मॉड्यूल 4 - Azure AI Search
@@ -23,7 +24,7 @@ sections_title:
 
 # भाग 2: नॉलेज इंटीग्रेशन
 
-![वर्कशॉप बैनर](../../../assets/banner.jpg)
+![वर्कशॉप बैनर](../../assets/banner.jpg)
 
 > 🌍 **[← भाग 1](./part1-basics.hi.md)** | **[🏠 होम](./index.hi.md)** | **[भाग 3 →](./part3-production.hi.md)**
 

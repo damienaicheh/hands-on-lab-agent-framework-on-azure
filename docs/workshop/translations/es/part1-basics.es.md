@@ -11,9 +11,10 @@ contacts:
   - "@olivMertens"
 duration_minutes: 70
 tags: requisitos, terraform, agente-simple, salida-estructurada, herramientas
-banner_url: ../../../assets/banner.jpg
+banner_url: ../../assets/banner.jpg
 navigation_levels: 1
 sections_title:
+  - Introducción
   - 🏠 Navegación
   - Requisitos Previos
   - Despliegue de Infraestructura
@@ -25,7 +26,7 @@ sections_title:
 
 # Parte 1: Los Fundamentos
 
-![Banner del Taller](../../../assets/banner.jpg)
+![Banner del Taller](../../assets/banner.jpg)
 
 > 🌍 **[🏠 Inicio del Taller](./index.es.md)** | **[Parte 2 →](./part2-knowledge.es.md)**
 
@@ -51,17 +52,6 @@ sections_title:
 
 ---
 
-Esta parte cubre la configuración inicial y los primeros módulos:
-
-| Sección | Contenido |
-|---------|-----------|
-| **Requisitos** | Herramientas y cuentas necesarias |
-| **Despliegue** | Infraestructura Azure con Terraform |
-| **Módulo 1** | Agente simple con streaming |
-| **Módulo 2** | Salida estructurada Pydantic |
-| **Módulo 3** | Herramientas de función |
-
----
 
 ## Requisitos Previos
 

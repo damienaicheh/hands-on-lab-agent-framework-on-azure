@@ -17,6 +17,7 @@ tags: agent framework, azure openai, pydantic, function tools
 navigation_levels: 1
 banner_url: ../assets/banner.jpg
 sections_title:
+  - Introduction
   - 🏠 Navigation
   - Prerequisites
   - Deploy Infrastructure
@@ -51,8 +52,6 @@ sections_title:
 > - [🇮🇳 हिन्दी](/workshop/translations/hi/part1-basics.hi.md)
 
 </div>
-
----
 
 This part covers the foundation: setting up your environment and building your first agents.
 

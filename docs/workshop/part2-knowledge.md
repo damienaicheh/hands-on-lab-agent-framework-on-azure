@@ -17,6 +17,7 @@ tags: agent framework, azure ai search, rag, mcp, group chat
 navigation_levels: 1
 banner_url: ../assets/banner.jpg
 sections_title:
+  - Introduction
   - 🏠 Navigation
   - Code from Part 1
   - Module 4 - Knowledge Integration
@@ -49,10 +50,6 @@ sections_title:
 > - [🇮🇳 हिन्दी](/workshop/translations/hi/part2-knowledge.hi.md)
 
 </div>
-
----
-
-This part covers knowledge integration and multi-agent collaboration.
 
 ---
 

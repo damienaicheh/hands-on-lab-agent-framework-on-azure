@@ -14,6 +14,7 @@ tags: orchestration, observability, opentelemetry, evaluation, production, hando
 banner_url: ../assets/banner.jpg
 navigation_levels: 1
 sections_title:
+  - Introduction
   - 🏠 Navigation
   - Code from Parts 1-2
   - Module 6 - Orchestration
@@ -47,10 +48,6 @@ sections_title:
 > - [🇮🇳 हिन्दी](/workshop/translations/hi/part3-production.hi.md)
 
 </div>
-
----
-
-In this part, you'll learn how to build **production-grade** agent systems.
 
 ---
 

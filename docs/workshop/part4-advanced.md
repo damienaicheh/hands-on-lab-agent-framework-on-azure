@@ -14,6 +14,7 @@ tags: redis, persistence, architecture, production, resources, conclusion
 banner_url: ../assets/banner.jpg
 navigation_levels: 1
 sections_title:
+  - Introduction
   - 🏠 Navigation
   - Code from Parts 1-3
   - Module 9 - Redis Integration
@@ -46,10 +47,6 @@ sections_title:
 > - [🇮🇳 हिन्दी](/workshop/translations/hi/part4-advanced.hi.md)
 
 </div>
-
----
-
-Final part of the workshop.
 
 ---
 

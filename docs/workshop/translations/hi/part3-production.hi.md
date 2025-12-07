@@ -11,9 +11,10 @@ contacts:
   - "@olivMertens"
 duration_minutes: 90
 tags: handoff, orchestration, opentelemetry, observability, evaluation, testing
-banner_url: ../../../assets/banner.jpg
+banner_url: ../../assets/banner.jpg
 navigation_levels: 1
 sections_title:
+  - परिचय
   - 🏠 नेविगेशन
   - भाग 1-2 का कोड
   - मॉड्यूल 6 - Orchestration
@@ -24,7 +25,7 @@ sections_title:
 
 # भाग 3: प्रोडक्शन रेडीनेस
 
-![वर्कशॉप बैनर](../../../assets/banner.jpg)
+![वर्कशॉप बैनर](../../assets/banner.jpg)
 
 > 🌍 **[← भाग 2](./part2-knowledge.hi.md)** | **[🏠 होम](./index.hi.md)** | **[भाग 4 →](./part4-advanced.hi.md)**
 
