@@ -14,7 +14,7 @@ tags: rag, azure-ai-search, group-chat, mcp, multi-agent
 banner_url: ../../../assets/banner.jpg
 navigation_levels: 1
 sections_title:
-  - Introduction
+  - 🏠 Navigation
   - Code de la Partie 1
   - Module 4 - Azure AI Search
   - Module 5 - Discussion de groupe
@@ -26,6 +26,28 @@ sections_title:
 ![Banner Workshop](../../../assets/banner.jpg)
 
 > 🌍 **[← Partie 1 : Les fondamentaux](./part1-basics.fr.md)** | **[Partie 3 : Prêt pour la production →](./part3-production.fr.md)**
+
+---
+
+## 🏠 Navigation
+
+<div class="tip" data-title="Navigation de l'atelier">
+
+> **📚 Toutes les parties :**
+> - [🏠 Accueil de l'atelier](./index.fr.md)
+> - [Partie 1 : Les fondamentaux](./part1-basics.fr.md)
+> - [Partie 2 : Gestion des connaissances](./part2-knowledge.fr.md) *(actuel)*
+> - [Partie 3 : Prêt pour la production](./part3-production.fr.md)
+> - [Partie 4 : Pour aller plus loin](./part4-advanced.fr.md)
+>
+> **🌍 Cette page en d'autres langues :**
+> - [🇬🇧 English](/workshop/part2-knowledge.md)
+> - [🇪🇸 Español](/workshop/translations/es/part2-knowledge.es.md)
+> - [🇮🇳 हिन्दी](/workshop/translations/hi/part2-knowledge.hi.md)
+
+</div>
+
+---
 
 Dans cette partie, vous allez enrichir vos agents avec des connaissances et de la collaboration.
 

@@ -14,7 +14,7 @@ tags: redis, persistencia, arquitectura, producción, recursos, conclusión
 banner_url: ../../../assets/banner.jpg
 navigation_levels: 1
 sections_title:
-  - Introducción
+  - 🏠 Navegación
   - Código de las Partes 1-3
   - Módulo 9 - Redis
   - Conclusión
@@ -26,6 +26,28 @@ sections_title:
 ![Banner del Taller](../../../assets/banner.jpg)
 
 > 🌍 **[← Parte 3: Producción](part3-production.es.md)** | **[🏠 Inicio del Taller](index.es.md)**
+
+---
+
+## 🏠 Navegación
+
+<div class="tip" data-title="Navegación del Taller">
+
+> **📚 Todas las partes:**
+> - [🏠 Inicio del Taller](./index.es.md)
+> - [Parte 1: Los Fundamentos](./part1-basics.es.md)
+> - [Parte 2: Integración de Conocimiento](./part2-knowledge.es.md)
+> - [Parte 3: Listo para Producción](./part3-production.es.md)
+> - [Parte 4: Avanzado y Recursos](./part4-advanced.es.md) *(actual)*
+>
+> **🌍 Esta página en otros idiomas:**
+> - [🇬🇧 English](/workshop/part4-advanced.md)
+> - [🇫🇷 Français](/workshop/translations/fr/part4-advanced.fr.md)
+> - [🇮🇳 हिन्दी](/workshop/translations/hi/part4-advanced.hi.md)
+
+</div>
+
+---
 
 ## 📦 Código de las Partes 1-3
 

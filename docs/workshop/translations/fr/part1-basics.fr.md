@@ -14,7 +14,7 @@ tags: agent-framework, azure, setup, agent, streaming, pydantic, outils
 banner_url: ../../../assets/banner.jpg
 navigation_levels: 1
 sections_title:
-  - Introduction
+  - 🏠 Navigation
   - Prérequis
   - Déploiement
   - Module 1 - Agent simple
@@ -28,6 +28,28 @@ sections_title:
 ![Banner Workshop](../../../assets/banner.jpg)
 
 > 🌍 **[🏠 Accueil](./index.fr.md)** | **[Partie 2 : Gestion des connaissances →](./part2-knowledge.fr.md)**
+
+---
+
+## 🏠 Navigation
+
+<div class="tip" data-title="Navigation de l'atelier">
+
+> **📚 Toutes les parties :**
+> - [🏠 Accueil de l'atelier](./index.fr.md)
+> - [Partie 1 : Les fondamentaux](./part1-basics.fr.md) *(actuel)*
+> - [Partie 2 : Gestion des connaissances](./part2-knowledge.fr.md)
+> - [Partie 3 : Prêt pour la production](./part3-production.fr.md)
+> - [Partie 4 : Pour aller plus loin](./part4-advanced.fr.md)
+>
+> **🌍 Cette page en d'autres langues :**
+> - [🇬🇧 English](/workshop/part1-basics.md)
+> - [🇪🇸 Español](/workshop/translations/es/part1-basics.es.md)
+> - [🇮🇳 हिन्दी](/workshop/translations/hi/part1-basics.hi.md)
+
+</div>
+
+---
 
 Bienvenue ! Dans cette partie, vous allez :
 

@@ -14,7 +14,7 @@ tags: handoff, orchestration, opentelemetry, observability, evaluation, testing
 banner_url: ../../../assets/banner.jpg
 navigation_levels: 1
 sections_title:
-  - परिचय
+  - 🏠 नेविगेशन
   - भाग 1-2 का कोड
   - मॉड्यूल 6 - Orchestration
   - मॉड्यूल 7 - Observability
@@ -27,6 +27,28 @@ sections_title:
 ![वर्कशॉप बैनर](../../../assets/banner.jpg)
 
 > 🌍 **[← भाग 2](./part2-knowledge.hi.md)** | **[🏠 होम](./index.hi.md)** | **[भाग 4 →](./part4-advanced.hi.md)**
+
+---
+
+## 🏠 नेविगेशन
+
+<div class="tip" data-title="वर्कशॉप नेविगेशन">
+
+> **📚 सभी भाग:**
+> - [🏠 वर्कशॉप होम](./index.hi.md)
+> - [भाग 1: बुनियादी बातें](./part1-basics.hi.md)
+> - [भाग 2: नॉलेज इंटीग्रेशन](./part2-knowledge.hi.md)
+> - [भाग 3: प्रोडक्शन रेडी](./part3-production.hi.md) *(वर्तमान)*
+> - [भाग 4: एडवांस्ड और संसाधन](./part4-advanced.hi.md)
+>
+> **🌍 इस पेज को अन्य भाषाओं में:**
+> - [🇬🇧 English](/workshop/part3-production.md)
+> - [🇫🇷 Français](/workshop/translations/fr/part3-production.fr.md)
+> - [🇪🇸 Español](/workshop/translations/es/part3-production.es.md)
+
+</div>
+
+---
 
 ## 📦 भाग 1 और 2 का कोड
 

@@ -14,7 +14,7 @@ tags: redis, persistence, architecture, production, resources, conclusion
 banner_url: ../assets/banner.jpg
 navigation_levels: 1
 sections_title:
-  - Introduction
+  - 🏠 Navigation
   - Code from Parts 1-3
   - Module 9 - Redis Integration
   - Conclusion
@@ -25,7 +25,29 @@ sections_title:
 
 ![Workshop Banner](../assets/banner.jpg)
 
-> 🌍 **[← Part 3: Production Ready](./part3-production.md)** | **[🏠 Workshop Index](./index.md)**
+> 🌍 **[← Part 3: Production Ready](/workshop/part3-production.md)** | **[🏠 Workshop Index](/workshop/index.md)**
+
+---
+
+## 🏠 Navigation
+
+<div class="tip" data-title="Workshop Navigation">
+
+> **📚 All Parts:**
+> - [🏠 Workshop Home](/workshop/index.md)
+> - [Part 1: Getting Started](/workshop/part1-basics.md)
+> - [Part 2: Knowledge & Collaboration](/workshop/part2-knowledge.md)
+> - [Part 3: Production Ready](/workshop/part3-production.md)
+> - [Part 4: Advanced & Resources](/workshop/part4-advanced.md) *(current)*
+>
+> **🌍 This page in other languages:**
+> - [🇫🇷 Français](/workshop/translations/fr/part4-advanced.fr.md)
+> - [🇪🇸 Español](/workshop/translations/es/part4-advanced.es.md)
+> - [🇮🇳 हिन्दी](/workshop/translations/hi/part4-advanced.hi.md)
+
+</div>
+
+---
 
 Final part of the workshop.
 
@@ -117,9 +139,9 @@ REDIS_CONNECTION_STRING=rediss://your-redis.redis.cache.windows.net:6380?passwor
 <div class="info" data-title="Haven't completed Parts 1-3?">
 
 > Complete all previous parts first:
-> - [Part 1: Getting Started](./part1-basics.md)
-> - [Part 2: Knowledge & Collaboration](./part2-knowledge.md)  
-> - [Part 3: Production Ready](./part3-production.md)
+> - [Part 1: Getting Started](/workshop/part1-basics.md)
+> - [Part 2: Knowledge & Collaboration](/workshop/part2-knowledge.md)  
+> - [Part 3: Production Ready](/workshop/part3-production.md)
 >
 > Or use the code snippets above to set up your project.
 
@@ -584,7 +606,7 @@ Microsoft Agent Framework project for IT helpdesk with multi-agent orchestration
 
 ---
 
-> 🌍 **[← Part 3: Production Ready](./part3-production.md)** | **[🏠 Workshop Index](./index.md)**
+> 🌍 **[← Part 3: Production Ready](/workshop/part3-production.md)** | **[🏠 Workshop Index](/workshop/index.md)**
 
 <div class="info" data-title="🎉 Workshop Complete!">
 

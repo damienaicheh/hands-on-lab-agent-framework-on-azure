@@ -14,7 +14,7 @@ tags: requisitos, terraform, agente-simple, salida-estructurada, herramientas
 banner_url: ../../../assets/banner.jpg
 navigation_levels: 1
 sections_title:
-  - Introducción
+  - 🏠 Navegación
   - Requisitos Previos
   - Despliegue de Infraestructura
   - Módulo 1 - Agente Simple
@@ -28,6 +28,28 @@ sections_title:
 ![Banner del Taller](../../../assets/banner.jpg)
 
 > 🌍 **[🏠 Inicio del Taller](./index.es.md)** | **[Parte 2 →](./part2-knowledge.es.md)**
+
+---
+
+## 🏠 Navegación
+
+<div class="tip" data-title="Navegación del Taller">
+
+> **📚 Todas las partes:**
+> - [🏠 Inicio del Taller](./index.es.md)
+> - [Parte 1: Los Fundamentos](./part1-basics.es.md) *(actual)*
+> - [Parte 2: Integración de Conocimiento](./part2-knowledge.es.md)
+> - [Parte 3: Listo para Producción](./part3-production.es.md)
+> - [Parte 4: Avanzado y Recursos](./part4-advanced.es.md)
+>
+> **🌍 Esta página en otros idiomas:**
+> - [🇬🇧 English](/workshop/part1-basics.md)
+> - [🇫🇷 Français](/workshop/translations/fr/part1-basics.fr.md)
+> - [🇮🇳 हिन्दी](/workshop/translations/hi/part1-basics.hi.md)
+
+</div>
+
+---
 
 Esta parte cubre la configuración inicial y los primeros módulos:
 

@@ -134,10 +134,10 @@ El taller está dividido en **4 partes** para facilitar la navegación:
 
 ## 🌍 Otros Idiomas
 
-- 🇬🇧 [English](../../index.md)
-- 🇫🇷 [Français](../fr/index.fr.md)
+- 🇬🇧 [English](/workshop/index.md)
+- 🇫🇷 [Français](/workshop/translations/fr/index.fr.md)
 - 🇪🇸 Español (actual)
-- 🇮🇳 [हिन्दी](../hi/index.hi.md)
+- 🇮🇳 [हिन्दी](/workshop/translations/hi/index.hi.md)
 
 ---
 

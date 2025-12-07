@@ -17,7 +17,7 @@ tags: agent framework, azure openai, pydantic, function tools
 navigation_levels: 1
 banner_url: ../assets/banner.jpg
 sections_title:
-  - Introduction
+  - 🏠 Navigation
   - Prerequisites
   - Deploy Infrastructure
   - Module 1 - Simple Agent
@@ -30,7 +30,29 @@ sections_title:
 
 ![Workshop Banner](../assets/banner.jpg)
 
-> 🌍 **[← Back to Workshop Index](./index.md)** | **[Part 2: Knowledge & Collaboration →](./part2-knowledge.md)**
+> 🌍 **[← Back to Workshop Index](/workshop/index.md)** | **[Part 2: Knowledge & Collaboration →](/workshop/part2-knowledge.md)**
+
+---
+
+## 🏠 Navigation
+
+<div class="tip" data-title="Workshop Navigation">
+
+> **📚 All Parts:**
+> - [🏠 Workshop Home](/workshop/index.md)
+> - [Part 1: Getting Started](/workshop/part1-basics.md) *(current)*
+> - [Part 2: Knowledge & Collaboration](/workshop/part2-knowledge.md)
+> - [Part 3: Production Ready](/workshop/part3-production.md)
+> - [Part 4: Advanced & Resources](/workshop/part4-advanced.md)
+>
+> **🌍 This page in other languages:**
+> - [🇫🇷 Français](/workshop/translations/fr/part1-basics.fr.md)
+> - [🇪🇸 Español](/workshop/translations/es/part1-basics.es.md)
+> - [🇮🇳 हिन्दी](/workshop/translations/hi/part1-basics.hi.md)
+
+</div>
+
+---
 
 This part covers the foundation: setting up your environment and building your first agents.
 
@@ -656,7 +678,7 @@ You've learned:
 
 <div class="info" data-title="Next Steps">
 
-> **[Continue to Part 2: Knowledge & Collaboration →](./part2-knowledge.md)**
+> **[Continue to Part 2: Knowledge & Collaboration →](/workshop/part2-knowledge.md)**
 >
 > Learn about Azure AI Search integration and multi-agent Group Chat!
 

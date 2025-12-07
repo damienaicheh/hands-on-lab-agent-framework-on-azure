@@ -14,7 +14,7 @@ tags: rag, ai-search, group-chat, mcp, multi-agente
 banner_url: ../../../assets/banner.jpg
 navigation_levels: 1
 sections_title:
-  - Introducción
+  - 🏠 Navegación
   - Código de la Parte 1
   - Módulo 4 - Azure AI Search
   - Módulo 5 - Group Chat
@@ -26,6 +26,28 @@ sections_title:
 ![Banner del Taller](../../../assets/banner.jpg)
 
 > 🌍 **[← Parte 1: Los Fundamentos](./part1-basics.es.md)** | **[Parte 3 →](./part3-production.es.md)**
+
+---
+
+## 🏠 Navegación
+
+<div class="tip" data-title="Navegación del Taller">
+
+> **📚 Todas las partes:**
+> - [🏠 Inicio del Taller](./index.es.md)
+> - [Parte 1: Los Fundamentos](./part1-basics.es.md)
+> - [Parte 2: Integración de Conocimiento](./part2-knowledge.es.md) *(actual)*
+> - [Parte 3: Listo para Producción](./part3-production.es.md)
+> - [Parte 4: Avanzado y Recursos](./part4-advanced.es.md)
+>
+> **🌍 Esta página en otros idiomas:**
+> - [🇬🇧 English](/workshop/part2-knowledge.md)
+> - [🇫🇷 Français](/workshop/translations/fr/part2-knowledge.fr.md)
+> - [🇮🇳 हिन्दी](/workshop/translations/hi/part2-knowledge.hi.md)
+
+</div>
+
+---
 
 ## 📦 Código de la Parte 1
 

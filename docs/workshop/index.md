@@ -27,7 +27,7 @@ sections_title:
 
 # Helpdesk Ops Assistant - Agent Framework on Azure
 
-> 🌍 **Languages:** [Français](./translations/fr/index.fr.md) | [Español](./translations/es/index.es.md) | [हिन्दी](./translations/hi/index.hi.md)
+> 🌍 **Languages:** [Français](/workshop/translations/fr/index.fr.md) | [Español](/workshop/translations/es/index.es.md) | [हिन्दी](/workshop/translations/hi/index.hi.md)
 
 > 💻 **Language Support:** This workshop uses **Python**, but Microsoft Agent Framework is also available in **C#/.NET**. See the [official documentation](https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview){target="_blank"} for .NET examples.
 
@@ -57,10 +57,10 @@ This workshop is divided into **4 parts** for easier navigation:
 
 | Part | Modules | Duration | Description |
 |------|---------|----------|-------------|
-| [**Part 1: Getting Started**](./part1-basics.md) | Setup + Modules 1-3 | 75 min | Prerequisites, infrastructure, simple agents, tools |
-| [**Part 2: Knowledge & Collaboration**](./part2-knowledge.md) | Modules 4-5 | 65 min | AI Search integration, multi-agent Group Chat |
-| [**Part 3: Production Ready**](./part3-production.md) | Modules 6-8 | 85 min | Orchestration, observability, evaluation |
-| [**Part 4: Advanced & Conclusion**](./part4-advanced.md) | Module 9 + Resources | 40 min | Redis persistence, go further resources |
+| [**Part 1: Getting Started**](/workshop/part1-basics.md) | Setup + Modules 1-3 | 75 min | Prerequisites, infrastructure, simple agents, tools |
+| [**Part 2: Knowledge & Collaboration**](/workshop/part2-knowledge.md) | Modules 4-5 | 65 min | AI Search integration, multi-agent Group Chat |
+| [**Part 3: Production Ready**](/workshop/part3-production.md) | Modules 6-8 | 85 min | Orchestration, observability, evaluation |
+| [**Part 4: Advanced & Conclusion**](/workshop/part4-advanced.md) | Module 9 + Resources | 40 min | Redis persistence, go further resources |
 
 ---
 
@@ -68,20 +68,20 @@ This workshop is divided into **4 parts** for easier navigation:
 
 <div class="info" data-title="Choose Your Path">
 
-> **🚀 First time?** Start with [Part 1: Getting Started](./part1-basics.md)
+> **🚀 First time?** Start with [Part 1: Getting Started](/workshop/part1-basics.md)
 >
 > **🔍 Need a specific topic?** Jump directly to:
-> - [Prerequisites & Setup](./part1-basics.md?step=1)
-> - [Module 1: Simple Agent](./part1-basics.md?step=3)
-> - [Module 2: Structured Output](./part1-basics.md?step=4)
-> - [Module 3: Function Tools](./part1-basics.md?step=5)
-> - [Module 4: AI Search / RAG](./part2-knowledge.md?step=2)
-> - [Module 5: Group Chat](./part2-knowledge.md?step=3)
-> - [Module 6: Orchestration](./part3-production.md?step=2)
-> - [Module 7: Observability](./part3-production.md?step=3)
-> - [Module 8: Evaluation](./part3-production.md?step=4)
-> - [Module 9: Redis](./part4-advanced.md?step=2)
-> - [Conclusion & Resources](./part4-advanced.md?step=3)
+> - [Prerequisites & Setup](/workshop/part1-basics.md?step=1)
+> - [Module 1: Simple Agent](/workshop/part1-basics.md?step=3)
+> - [Module 2: Structured Output](/workshop/part1-basics.md?step=4)
+> - [Module 3: Function Tools](/workshop/part1-basics.md?step=5)
+> - [Module 4: AI Search / RAG](/workshop/part2-knowledge.md?step=2)
+> - [Module 5: Group Chat](/workshop/part2-knowledge.md?step=3)
+> - [Module 6: Orchestration](/workshop/part3-production.md?step=2)
+> - [Module 7: Observability](/workshop/part3-production.md?step=3)
+> - [Module 8: Evaluation](/workshop/part3-production.md?step=4)
+> - [Module 9: Redis](/workshop/part4-advanced.md?step=2)
+> - [Conclusion & Resources](/workshop/part4-advanced.md?step=3)
 
 </div>
 
@@ -136,6 +136,6 @@ This workshop is divided into **4 parts** for easier navigation:
 
 > Click below to start with Part 1:
 >
-> **[🚀 Start Part 1: Getting Started →](./part1-basics.md)**
+> **[🚀 Start Part 1: Getting Started →](/workshop/part1-basics.md)**
 
 </div>

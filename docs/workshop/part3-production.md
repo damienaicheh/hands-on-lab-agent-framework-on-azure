@@ -14,7 +14,7 @@ tags: orchestration, observability, opentelemetry, evaluation, production, hando
 banner_url: ../assets/banner.jpg
 navigation_levels: 1
 sections_title:
-  - Introduction
+  - 🏠 Navigation
   - Code from Parts 1-2
   - Module 6 - Orchestration
   - Module 7 - Observability
@@ -26,7 +26,29 @@ sections_title:
 
 ![Workshop Banner](../assets/banner.jpg)
 
-> 🌍 **[← Part 2: Knowledge Integration](./part2-knowledge.md)** | **[Part 4: Advanced & Resources →](./part4-advanced.md)**
+> 🌍 **[← Part 2: Knowledge Integration](/workshop/part2-knowledge.md)** | **[Part 4: Advanced & Resources →](/workshop/part4-advanced.md)**
+
+---
+
+## 🏠 Navigation
+
+<div class="tip" data-title="Workshop Navigation">
+
+> **📚 All Parts:**
+> - [🏠 Workshop Home](/workshop/index.md)
+> - [Part 1: Getting Started](/workshop/part1-basics.md)
+> - [Part 2: Knowledge & Collaboration](/workshop/part2-knowledge.md)
+> - [Part 3: Production Ready](/workshop/part3-production.md) *(current)*
+> - [Part 4: Advanced & Resources](/workshop/part4-advanced.md)
+>
+> **🌍 This page in other languages:**
+> - [🇫🇷 Français](/workshop/translations/fr/part3-production.fr.md)
+> - [🇪🇸 Español](/workshop/translations/es/part3-production.es.md)
+> - [🇮🇳 हिन्दी](/workshop/translations/hi/part3-production.hi.md)
+
+</div>
+
+---
 
 In this part, you'll learn how to build **production-grade** agent systems.
 
@@ -115,7 +137,7 @@ APPLICATIONINSIGHTS_CONNECTION_STRING=InstrumentationKey=xxx;...
 
 <div class="info" data-title="Haven't completed Parts 1-2?">
 
-> Complete [Part 1](./part1-basics.md) and [Part 2](./part2-knowledge.md) first, or use the code snippets above to catch up.
+> Complete [Part 1](/workshop/part1-basics.md) and [Part 2](/workshop/part2-knowledge.md) first, or use the code snippets above to catch up.
 
 </div>
 
@@ -791,4 +813,4 @@ You've built **production-ready** agent systems:
 └─────────────────────────────────────────────┘
 ```
 
-> 🌍 **[← Part 2: Knowledge Integration](./part2-knowledge.md)** | **[Part 4: Advanced & Resources →](./part4-advanced.md)**
+> 🌍 **[← Part 2: Knowledge Integration](/workshop/part2-knowledge.md)** | **[Part 4: Advanced & Resources →](/workshop/part4-advanced.md)**

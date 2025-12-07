@@ -134,10 +134,10 @@ L'atelier se compose de **4 parties** pour faciliter la navigation :
 
 ## 🌍 Autres langues
 
-- 🇬🇧 [English](../../index.md)
+- 🇬🇧 [English](/workshop/index.md)
 - 🇫🇷 Français (version actuelle)
-- 🇪🇸 [Español](../es/index.es.md)
-- 🇮🇳 [हिन्दी](../hi/index.hi.md)
+- 🇪🇸 [Español](/workshop/translations/es/index.es.md)
+- 🇮🇳 [हिन्दी](/workshop/translations/hi/index.hi.md)
 
 ---
 

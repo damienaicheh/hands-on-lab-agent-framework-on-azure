@@ -134,9 +134,9 @@ sections_title:
 
 ## 🌍 अन्य भाषाएं
 
-- 🇬🇧 [English](../../index.md)
-- 🇫🇷 [Français](../fr/index.fr.md)
-- 🇪🇸 [Español](../es/index.es.md)
+- 🇬🇧 [English](/workshop/index.md)
+- 🇫🇷 [Français](/workshop/translations/fr/index.fr.md)
+- 🇪🇸 [Español](/workshop/translations/es/index.es.md)
 - 🇮🇳 हिन्दी (वर्तमान)
 
 ---

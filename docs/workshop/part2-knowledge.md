@@ -17,7 +17,7 @@ tags: agent framework, azure ai search, rag, mcp, group chat
 navigation_levels: 1
 banner_url: ../assets/banner.jpg
 sections_title:
-  - Introduction
+  - 🏠 Navigation
   - Code from Part 1
   - Module 4 - Knowledge Integration
   - Module 5 - Group Chat Workflow
@@ -28,7 +28,29 @@ sections_title:
 
 ![Workshop Banner](../assets/banner.jpg)
 
-> 🌍 **[← Part 1: Getting Started](./part1-basics.md)** | **[Part 3: Production Ready →](./part3-production.md)**
+> 🌍 **[← Part 1: Getting Started](/workshop/part1-basics.md)** | **[Part 3: Production Ready →](/workshop/part3-production.md)**
+
+---
+
+## 🏠 Navigation
+
+<div class="tip" data-title="Workshop Navigation">
+
+> **📚 All Parts:**
+> - [🏠 Workshop Home](/workshop/index.md)
+> - [Part 1: Getting Started](/workshop/part1-basics.md)
+> - [Part 2: Knowledge & Collaboration](/workshop/part2-knowledge.md) *(current)*
+> - [Part 3: Production Ready](/workshop/part3-production.md)
+> - [Part 4: Advanced & Resources](/workshop/part4-advanced.md)
+>
+> **🌍 This page in other languages:**
+> - [🇫🇷 Français](/workshop/translations/fr/part2-knowledge.fr.md)
+> - [🇪🇸 Español](/workshop/translations/es/part2-knowledge.es.md)
+> - [🇮🇳 हिन्दी](/workshop/translations/hi/part2-knowledge.hi.md)
+
+</div>
+
+---
 
 This part covers knowledge integration and multi-agent collaboration.
 
@@ -92,7 +114,7 @@ def create_ticket(title: str, description: str, priority: str = "medium") -> str
 
 <div class="info" data-title="Haven't completed Part 1?">
 
-> Complete [Part 1: Getting Started](./part1-basics.md) first, or copy the code above to catch up.
+> Complete [Part 1: Getting Started](/workshop/part1-basics.md) first, or copy the code above to catch up.
 
 </div>
 
@@ -570,7 +592,7 @@ You've learned:
 
 <div class="info" data-title="Next Steps">
 
-> **[Continue to Part 3: Production Ready →](./part3-production.md)**
+> **[Continue to Part 3: Production Ready →](/workshop/part3-production.md)**
 >
 > Learn about orchestration, observability, and evaluation!
 

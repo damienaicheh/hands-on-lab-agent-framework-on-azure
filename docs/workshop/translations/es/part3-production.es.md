@@ -14,7 +14,7 @@ tags: orquestación, handoff, opentelemetry, evaluación, producción
 banner_url: ../../../assets/banner.jpg
 navigation_levels: 1
 sections_title:
-  - Introducción
+  - 🏠 Navegación
   - Código de las Partes 1-2
   - Módulo 6 - Orquestación
   - Módulo 7 - Observabilidad
@@ -27,6 +27,28 @@ sections_title:
 ![Banner del Taller](../../../assets/banner.jpg)
 
 > 🌍 **[← Parte 2: Conocimiento](./part2-knowledge.es.md)** | **[Parte 4 →](./part4-advanced.es.md)**
+
+---
+
+## 🏠 Navegación
+
+<div class="tip" data-title="Navegación del Taller">
+
+> **📚 Todas las partes:**
+> - [🏠 Inicio del Taller](./index.es.md)
+> - [Parte 1: Los Fundamentos](./part1-basics.es.md)
+> - [Parte 2: Integración de Conocimiento](./part2-knowledge.es.md)
+> - [Parte 3: Listo para Producción](./part3-production.es.md) *(actual)*
+> - [Parte 4: Avanzado y Recursos](./part4-advanced.es.md)
+>
+> **🌍 Esta página en otros idiomas:**
+> - [🇬🇧 English](/workshop/part3-production.md)
+> - [🇫🇷 Français](/workshop/translations/fr/part3-production.fr.md)
+> - [🇮🇳 हिन्दी](/workshop/translations/hi/part3-production.hi.md)
+
+</div>
+
+---
 
 ## 📦 Código de las Partes 1 y 2
 

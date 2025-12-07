@@ -14,7 +14,7 @@ tags: redis, persistance, architecture, production, ressources, conclusion
 banner_url: ../../../assets/banner.jpg
 navigation_levels: 1
 sections_title:
-  - Introduction
+  - 🏠 Navigation
   - Code des Parties 1-3
   - Module 9 - Redis
   - Conclusion
@@ -26,6 +26,28 @@ sections_title:
 ![Banner Workshop](../../../assets/banner.jpg)
 
 > 🌍 **[← Partie 3 : Prêt pour la production](./part3-production.fr.md)** | **[🏠 Accueil Atelier](./index.fr.md)**
+
+---
+
+## 🏠 Navigation
+
+<div class="tip" data-title="Navigation de l'atelier">
+
+> **📚 Toutes les parties :**
+> - [🏠 Accueil de l'atelier](./index.fr.md)
+> - [Partie 1 : Les fondamentaux](./part1-basics.fr.md)
+> - [Partie 2 : Gestion des connaissances](./part2-knowledge.fr.md)
+> - [Partie 3 : Prêt pour la production](./part3-production.fr.md)
+> - [Partie 4 : Pour aller plus loin](./part4-advanced.fr.md) *(actuel)*
+>
+> **🌍 Cette page en d'autres langues :**
+> - [🇬🇧 English](/workshop/part4-advanced.md)
+> - [🇪🇸 Español](/workshop/translations/es/part4-advanced.es.md)
+> - [🇮🇳 हिन्दी](/workshop/translations/hi/part4-advanced.hi.md)
+
+</div>
+
+---
 
 Dernière partie de l'atelier.
 
