@@ -281,6 +281,42 @@ python src/module4_knowledge_agent.py
 
 Créez un workflow collaboratif avec plusieurs agents spécialisés.
 
+### 📚 Comprendre les Patterns d'Orchestration
+
+Microsoft Agent Framework fournit des **patterns d'orchestration pré-construits** qui permettent de créer rapidement des workflows multi-agents complexes. Comprendre quel pattern choisir est crucial pour construire des systèmes d'agents efficaces.
+
+<div class="info" data-title="📖 Documentation Officielle">
+
+> Pour tous les détails sur les patterns d'orchestration, consultez la documentation officielle :
+> **[Microsoft Agent Framework Workflows Orchestrations](https://learn.microsoft.com/en-us/agent-framework/user-guide/workflows/orchestrations/overview){target="_blank"}**
+
+</div>
+
+#### Pourquoi Multi-Agent ?
+
+Les systèmes à agent unique sont limités dans leur capacité à gérer des tâches complexes et multifacettes. En orchestrant plusieurs agents, chacun avec des compétences ou rôles spécialisés, nous pouvons créer des systèmes plus robustes, adaptatifs et capables de résoudre des problèmes réels de manière collaborative.
+
+#### Orchestrations Supportées
+
+| Pattern | Description | Cas d'Usage |
+|---------|-------------|-------------|
+| **Concurrent** | Diffuse une tâche à tous les agents, collecte les résultats indépendamment | Analyse parallèle, sous-tâches indépendantes, décision d'ensemble |
+| **Sequential** | Passe le résultat d'un agent au suivant dans un ordre défini | Workflows étape par étape, pipelines, traitement multi-étapes |
+| **Group Chat** ✅ | Coordonne plusieurs agents dans une conversation collaborative avec un manager contrôlant la sélection des intervenants | Raffinement itératif, résolution collaborative, revue de contenu |
+| **Handoff** | Passe dynamiquement le contrôle entre agents selon le contexte ou des règles | Workflows dynamiques, escalade, fallback, transfert vers expert |
+| **Magentic** | Inspiré de MagenticOne | Collaboration multi-agent complexe et généraliste |
+
+#### Pourquoi Group Chat pour ce Module ?
+
+Nous avons choisi l'orchestration **Group Chat** car :
+
+1. **Résolution Collaborative** : Notre scénario helpdesk nécessite plusieurs spécialistes (expert documentation, expert GitHub) qui travaillent ensemble
+2. **Flux Contrôlé par le Manager** : Le GroupManager coordonne quel agent parle et quand, assurant des réponses organisées
+3. **Raffinement Itératif** : Les agents peuvent construire sur les contributions des autres pour fournir des réponses complètes
+4. **Conversation Naturelle** : L'interaction type chat est naturelle pour les scénarios helpdesk
+
+Dans le **Module 6** (Partie 3), nous explorerons l'orchestration **Handoff** pour le routage dynamique et les patterns d'escalade.
+
 ### 📚 Concept : Group Chat avec MCP
 
 ```text

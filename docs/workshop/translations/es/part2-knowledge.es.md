@@ -335,6 +335,39 @@ python src/module4_knowledge_agent.py
 
 Orquesta múltiples agentes especializados con servidores MCP.
 
+### 📚 Comprender los Patrones de Orquestación
+
+<div class="info" data-title="📖 Documentación Oficial">
+
+> **[Microsoft Agent Framework Workflows Orchestrations](https://learn.microsoft.com/en-us/agent-framework/user-guide/workflows/orchestrations/overview){target="_blank"}** — Referencia completa sobre patrones de orquestación multi-agente.
+
+</div>
+
+#### ¿Por qué Multi-Agente?
+
+Cuando la complejidad de una tarea supera la capacidad de un solo agente, múltiples agentes especializados colaborando ofrecen una solución más efectiva. Cada agente aporta su experiencia específica, y juntos pueden resolver problemas que serían difíciles para un agente individual.
+
+#### Orquestaciones Soportadas
+
+El Agent Framework soporta varios **patrones de orquestación**, cada uno adaptado a diferentes necesidades:
+
+| Patrón | Descripción | Mejores Casos de Uso |
+|--------|-------------|----------------------|
+| **Concurrent** | Difunde una tarea a todos los agentes, agregando resultados | Análisis paralelo, votación, reunir perspectivas diversas |
+| **Sequential** | Pasa el resultado de agente a agente en orden | Pipelines, refinamiento, transformaciones por etapas |
+| **Group Chat** ✅ | Conversación colaborativa con administración por selector | Resolución de problemas, brainstorming, tareas donde los agentes se basan en los demás |
+| **Handoff** | Transferencia dinámica de control entre agentes | Escalación, delegación de especialidad |
+| **Magentic** | Inspirado en MagenticOne para colaboración compleja | Escenarios avanzados de colaboración |
+
+#### ¿Por qué Group Chat para este Módulo?
+
+Elegimos **Group Chat** porque:
+
+1. **Colaboración dinámica**: Los agentes pueden responder a las contribuciones de otros en tiempo real
+2. **Selección inteligente**: Un selector (con LLM) elige qué agente debe responder según el contexto
+3. **Capacidades MCP**: Se integra naturalmente con servidores MCP especializados (MSLearn, GitHub)
+4. **Aprendizaje práctico**: Demuestra el patrón de colaboración más interactivo
+
 ### 📚 Concepto: ¿Qué es MCP?
 
 **Model Context Protocol (MCP)** es un protocolo abierto para conectar IA a fuentes de datos.

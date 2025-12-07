@@ -343,6 +343,39 @@ python src/module4_rag_agent.py
 
 Model Context Protocol (MCP) के साथ specialized agents के बीच collaboration।
 
+### 📚 ऑर्केस्ट्रेशन पैटर्न को समझना
+
+<div class="info" data-title="📖 आधिकारिक दस्तावेज़">
+
+> **[Microsoft Agent Framework Workflows Orchestrations](https://learn.microsoft.com/en-us/agent-framework/user-guide/workflows/orchestrations/overview){target="_blank"}** — Multi-agent orchestration patterns पर संपूर्ण संदर्भ।
+
+</div>
+
+#### Multi-Agent क्यों?
+
+जब किसी task की complexity एक single agent की क्षमता से अधिक हो जाती है, तो multiple specialized agents मिलकर collaborate करके अधिक प्रभावी solution प्रदान करते हैं। हर agent अपनी specific expertise लाता है, और साथ मिलकर वे ऐसी problems solve कर सकते हैं जो एक individual agent के लिए कठिन होंगी।
+
+#### समर्थित Orchestrations
+
+Agent Framework कई **orchestration patterns** support करता है, जो विभिन्न आवश्यकताओं के लिए तैयार किए गए हैं:
+
+| Pattern | विवरण | सर्वोत्तम Use Cases |
+|---------|--------|---------------------|
+| **Concurrent** | Task को सभी agents को broadcast करता है, results aggregate करता है | Parallel analysis, voting, diverse perspectives इकट्ठा करना |
+| **Sequential** | Result को एक agent से दूसरे को क्रम में pass करता है | Pipelines, refinement, staged transformations |
+| **Group Chat** ✅ | Selector management के साथ collaborative conversation | Problem-solving, brainstorming, जहां agents एक-दूसरे पर build करें |
+| **Handoff** | Agents के बीच dynamic control transfer | Escalation, specialty delegation |
+| **Magentic** | Complex collaboration के लिए MagenticOne inspired | Advanced collaboration scenarios |
+
+#### इस Module के लिए Group Chat क्यों?
+
+हमने **Group Chat** चुना क्योंकि:
+
+1. **Dynamic collaboration**: Agents real-time में दूसरों के contributions पर respond कर सकते हैं
+2. **Intelligent selection**: एक selector (LLM के साथ) context के आधार पर चुनता है कि कौन सा agent respond करे
+3. **MCP capabilities**: Specialized MCP servers (MSLearn, GitHub) के साथ naturally integrate होता है
+4. **Practical learning**: सबसे interactive collaboration pattern demonstrate करता है
+
 ### 📚 कॉन्सेप्ट: MCP क्या है?
 
 ```

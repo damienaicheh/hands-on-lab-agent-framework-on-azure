@@ -332,6 +332,42 @@ if __name__ == "__main__":
 - Create Group Chat orchestration
 - Connect agents via MCP
 
+### 📚 Understanding Orchestration Patterns
+
+The Microsoft Agent Framework provides **pre-built orchestration patterns** that allow you to quickly create complex multi-agent workflows. Understanding which pattern to choose is crucial for building effective agent systems.
+
+<div class="info" data-title="📖 Official Documentation">
+
+> For complete details on orchestration patterns, see the official documentation:
+> **[Microsoft Agent Framework Workflows Orchestrations](https://learn.microsoft.com/en-us/agent-framework/user-guide/workflows/orchestrations/overview){target="_blank"}**
+
+</div>
+
+#### Why Multi-Agent?
+
+Traditional single-agent systems are limited in their ability to handle complex, multi-faceted tasks. By orchestrating multiple agents, each with specialized skills or roles, we can create systems that are more robust, adaptive, and capable of solving real-world problems collaboratively.
+
+#### Supported Orchestrations
+
+| Pattern | Description | Best Use Cases |
+|---------|-------------|----------------|
+| **Concurrent** | Broadcasts a task to all agents, collects results independently | Parallel analysis, independent subtasks, ensemble decision making |
+| **Sequential** | Passes the result from one agent to the next in a defined order | Step-by-step workflows, pipelines, multi-stage processing |
+| **Group Chat** ✅ | Coordinates multiple agents in a collaborative conversation with a manager controlling speaker selection and flow | Iterative refinement, collaborative problem-solving, content review |
+| **Handoff** | Dynamically passes control between agents based on context or rules | Dynamic workflows, escalation, fallback, or expert handoff scenarios |
+| **Magentic** | Inspired by MagenticOne | Complex, generalist multi-agent collaboration |
+
+#### Why Group Chat for This Module?
+
+We chose **Group Chat** orchestration because:
+
+1. **Collaborative Problem-Solving**: Our helpdesk scenario requires multiple specialists (documentation expert, GitHub expert) to work together
+2. **Manager-Controlled Flow**: The GroupManager coordinates which agent speaks and when, ensuring organized responses
+3. **Iterative Refinement**: Agents can build on each other's contributions to provide comprehensive answers
+4. **Natural Conversation**: The chat-like interaction feels natural for helpdesk scenarios
+
+In **Module 6** (Part 3), we'll explore **Handoff** orchestration for dynamic routing and escalation patterns.
+
 ### 📚 Concept: Multi-Agent Collaboration
 
 | Single Agent | Multi-Agent Group Chat |
