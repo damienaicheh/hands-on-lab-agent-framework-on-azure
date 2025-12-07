@@ -35,6 +35,8 @@ sections_title:
 
 # Helpdesk Ops Assistant - Azure पर Agent Framework
 
+> 🌍 **अन्य भाषाओं में उपलब्ध:** [English](../workshop.md) | [Français](workshop.fr.md) | [Español](workshop.es.md)
+
 इस प्रैक्टिकल वर्कशॉप में आपका स्वागत है! आप एक **AI-powered mini-helpdesk** बनाएंगे जो internal tickets को process करता है:
 
 - 🔍 **Azure AI Search** - कंपनी FAQ knowledge के लिए

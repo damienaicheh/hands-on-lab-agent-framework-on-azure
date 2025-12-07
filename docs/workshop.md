@@ -35,6 +35,8 @@ sections_title:
 
 # Helpdesk Ops Assistant - Agent Framework on Azure
 
+> 🌍 **Available in other languages:** [Français](translations/workshop.fr.md) | [Español](translations/workshop.es.md) | [हिंदी](translations/workshop.hi.md)
+
 Welcome to this hands-on lab! You will build a **mini-helpdesk powered by AI agents** that processes internal tickets using:
 
 - 🔍 **Azure AI Search** for enterprise FAQ knowledge
@@ -112,29 +114,29 @@ Install the following extensions in Visual Studio Code:
 | **Azure Account** | `ms-vscode.azure-account` | Azure sign-in integration |
 | **Azure Tools** | `ms-vscode.vscode-node-azure-pack` | Azure development tools |
 
-<div class="hint" data-title="🤖 Maximize Copilot for This Workshop">
+<details>
+<summary>🤖 Maximize Copilot for This Workshop (click to expand)</summary>
 
-> **Set up Copilot for Agent Framework development:**
->
-> 1. **Create workspace instructions** - Add `.github/copilot-instructions.md`:
->    ```markdown
->    This project uses Microsoft Agent Framework for AI agents.
->    - Use Azure OpenAI with DefaultAzureCredential
->    - Use async/await patterns for all agent operations
->    - Use Pydantic for structured output
->    - Use @ai_function decorator for tools
->    - Follow OpenTelemetry patterns for observability
->    ```
->
-> 2. **Use the right Copilot mode for each task**:
->    - **Ask**: Questions about Agent Framework concepts
->    - **Edit**: Modify existing agent code
->    - **Agent**: Build new agents autonomously
->    - **Plan**: Design multi-agent architectures
->
-> 3. **Leverage MCP servers**: Install Azure MCP and GitHub MCP extensions for enhanced capabilities
+**Set up Copilot for Agent Framework development:**
 
-</div>
+1. **Create workspace instructions** - Add `.github/copilot-instructions.md` with content like:
+
+        This project uses Microsoft Agent Framework for AI agents.
+        - Use Azure OpenAI with DefaultAzureCredential
+        - Use async/await patterns for all agent operations
+        - Use Pydantic for structured output
+        - Use @ai_function decorator for tools
+        - Follow OpenTelemetry patterns for observability
+
+2. **Use the right Copilot mode for each task**:
+   - **Ask**: Questions about Agent Framework concepts
+   - **Edit**: Modify existing agent code
+   - **Agent**: Build new agents autonomously
+   - **Plan**: Design multi-agent architectures
+
+3. **Leverage MCP servers**: Install Azure MCP and GitHub MCP extensions for enhanced capabilities
+
+</details>
 
 #### Recommended Extensions for AI Development
 
@@ -453,22 +455,23 @@ In this module, you will discover the Microsoft Agent Framework and create your 
 - Multi-agent orchestration
 - Observability with OpenTelemetry
 
-<div class="hint" data-title="🤖 Use GitHub Copilot to Help!">
+<details>
+<summary>🤖 Use GitHub Copilot to Help! (click to expand)</summary>
 
-> **Copilot can help you understand the Agent Framework:**
->
-> 1. **Ask Copilot Chat** (`Ctrl+Shift+I`): `@workspace Explain what AzureOpenAIChatClient does and how to configure it`
-> 2. **Inline suggestions**: Start typing `client = Azure` and let Copilot autocomplete
-> 3. **Get documentation**: Select code and ask `/explain` to understand each parameter
->
-> **Pro tip**: Create a custom instruction file `.github/copilot-instructions.md`:
-> ```markdown
-> We use Microsoft Agent Framework with Azure OpenAI.
-> Always use DefaultAzureCredential for authentication.
-> Use async/await patterns for all agent operations.
-> ```
+**Copilot can help you understand the Agent Framework:**
 
-</div>
+1. **Ask Copilot Chat** (`Ctrl+Shift+I`): `@workspace Explain what AzureOpenAIChatClient does and how to configure it`
+2. **Inline suggestions**: Start typing `client = Azure` and let Copilot autocomplete
+3. **Get documentation**: Select code and ask `/explain` to understand each parameter
+
+**Pro tip**: Create a custom instruction file `.github/copilot-instructions.md`:
+```markdown
+We use Microsoft Agent Framework with Azure OpenAI.
+Always use DefaultAzureCredential for authentication.
+Use async/await patterns for all agent operations.
+```
+
+</details>
 
 ### 💻 Create Your First Agent
 
@@ -595,28 +598,20 @@ Build an agent that analyzes tickets and produces structured output.
 - Implement data contracts for agent responses
 - Build a ticket analysis pipeline
 
-<div class="hint" data-title="🤖 Copilot for Pydantic Models">
+<details>
+<summary>🤖 Copilot for Pydantic Models (click to expand)</summary>
 
-> **Let Copilot generate your data contracts:**
->
-> 1. **Use Agent mode** (`Ctrl+Shift+I` → select "Agent"): 
->    ```
->    Create a Pydantic model for IT ticket analysis with fields for 
->    category, severity, effort estimation, and recommended actions
->    ```
-> 2. **Inline completion**: Type `class TicketAnalysis(BaseModel):` and press Enter - Copilot suggests fields!
-> 3. **Add validation**: Ask `Add field validators to ensure severity is valid`
->
-> **Reusable prompt** - Create `.github/prompts/pydantic-model.prompt.md`:
-> ```markdown
-> ---
-> description: 'Generate Pydantic model for structured output'
-> ---
-> Create a Pydantic BaseModel with Field descriptions for use with Agent Framework structured output.
-> Include Literal types for constrained fields.
-> ```
+**Let Copilot generate your data contracts:**
 
-</div>
+1. **Use Agent mode** (`Ctrl+Shift+I` → select "Agent"): Ask Copilot to *"Create a Pydantic model for IT ticket analysis with fields for category, severity, effort estimation, and recommended actions"*
+
+2. **Inline completion**: Type `class TicketAnalysis(BaseModel):` and press Enter - Copilot suggests fields!
+
+3. **Add validation**: Ask *"Add field validators to ensure severity is valid"*
+
+**Reusable prompt** - Create `.github/prompts/pydantic-model.prompt.md` with a description like *"Generate Pydantic model for structured output"* and instructions to create a BaseModel with Field descriptions.
+
+</details>
 
 ### 📖 Data Contracts
 
@@ -740,29 +735,18 @@ Extend your agent with native function tools for extraction and classification.
 - Understand tool calling mechanics
 - Build a toolkit for ticket processing
 
-<div class="hint" data-title="🤖 Copilot for Function Tools">
+<details>
+<summary>🤖 Copilot for Function Tools (click to expand)</summary>
 
-> **Use Copilot to generate @ai_function tools:**
->
-> 1. **Describe what you need** in a comment:
->    ```python
->    # Create a function tool that extracts email addresses from text
->    # using regex and returns the found email or an error message
->    ```
->    Then press Enter and let Copilot generate the full function!
->
-> 2. **Use Edit mode** (`Ctrl+Shift+I` → "Edit"):
->    ```
->    Add a new @ai_function that looks up user information from a 
->    simulated directory based on email address
->    ```
->
-> 3. **Generate tests**: Select your tool function and ask:
->    ```
->    /tests Generate unit tests for this function tool
->    ```
+**Use Copilot to generate @ai_function tools:**
 
-</div>
+1. **Describe what you need** in a comment like `# Create a function tool that extracts email addresses from text using regex` - then press Enter and let Copilot generate the full function!
+
+2. **Use Edit mode** (`Ctrl+Shift+I` → "Edit"): Ask *"Add a new @ai_function that looks up user information from a simulated directory based on email address"*
+
+3. **Generate tests**: Select your tool function and ask `/tests Generate unit tests for this function tool`
+
+</details>
 
 ### 📖 Creating Tools
 
@@ -1058,32 +1042,18 @@ Implement a workflow where multiple agents collaborate.
 - Implement Group Chat orchestration
 - Configure agent-to-agent communication
 
-<div class="hint" data-title="🤖 Copilot for Multi-Agent Design">
+<details>
+<summary>🤖 Copilot for Multi-Agent Design (click to expand)</summary>
 
-> **Use Copilot to architect multi-agent systems:**
->
-> 1. **Plan with Copilot** (`Ctrl+Shift+I` → "Plan" mode):
->    ```
->    Design a group chat workflow with:
->    - A LearnAgent that searches documentation
->    - A GitHubAgent that creates issues
->    - A GroupManager that coordinates them
->    ```
->
-> 2. **Create a custom agent** - Add `.github/agents/AgentArchitect.agent.md`:
->    ```markdown
->    ---
->    description: "Agent Framework Architecture Assistant"
->    name: "AgentArchitect"
->    tools: ["codebase", "fetch"]
->    ---
->    Help design multi-agent workflows using Microsoft Agent Framework.
->    Always consider: agent roles, handoff patterns, and MCP integrations.
->    ```
->
-> 3. **Fetch latest docs**: In chat, use `#fetch https://github.com/microsoft/agent-framework`
+**Use Copilot to architect multi-agent systems:**
 
-</div>
+1. **Plan with Copilot** (`Ctrl+Shift+I` → "Plan" mode): Ask *"Design a group chat workflow with a LearnAgent that searches documentation, a GitHubAgent that creates issues, and a GroupManager that coordinates them"*
+
+2. **Create a custom agent** - Add `.github/agents/AgentArchitect.agent.md` with description *"Agent Framework Architecture Assistant"* and tools like `codebase` and `fetch`
+
+3. **Fetch latest docs**: In chat, use `#fetch https://github.com/microsoft/agent-framework`
+
+</details>
 
 ### 📖 Group Chat with Learn and GitHub Agents
 
@@ -1242,27 +1212,18 @@ Build a sophisticated orchestrator that coordinates all agents.
 - Build the main Orchestrator agent
 - Create conditional routing logic
 
-<div class="hint" data-title="🤖 Copilot for Orchestration Patterns">
+<details>
+<summary>🤖 Copilot for Orchestration Patterns (click to expand)</summary>
 
-> **Use Copilot Agent mode for complex refactoring:**
->
-> 1. **Switch to Agent mode** and use a premium model (Claude Sonnet 4.5 or GPT-4o):
->    ```
->    Refactor this code to use the HandoffBuilder pattern with:
->    - An Orchestrator that routes based on complexity
->    - Specialists for quick resolution, ticket creation, and escalation
->    - Proper handoff routes between agents
->    ```
->
-> 2. **Review with Copilot**: Right-click → Copilot → Review to check your orchestration logic
->
-> 3. **Debug handoffs**: Ask Copilot:
->    ```
->    @workspace Why might my handoff workflow skip the ComplexityAnalyst 
->    and go directly to QuickResolver?
->    ```
+**Use Copilot Agent mode for complex refactoring:**
 
-</div>
+1. **Switch to Agent mode** and use a premium model (Claude Sonnet 4.5 or GPT-4o): Ask *"Refactor this code to use the HandoffBuilder pattern with an Orchestrator that routes based on complexity, Specialists for quick resolution/ticket creation/escalation, and proper handoff routes"*
+
+2. **Review with Copilot**: Right-click → Copilot → Review to check your orchestration logic
+
+3. **Debug handoffs**: Ask Copilot *"@workspace Why might my handoff workflow skip the ComplexityAnalyst and go directly to QuickResolver?"*
+
+</details>
 
 ### 📖 Handoff Orchestration
 
@@ -1451,28 +1412,18 @@ Enable tracing and monitoring with OpenTelemetry and Azure AI Foundry.
 - Visualize agent interactions in Azure AI Foundry
 - Monitor tool calls and latency
 
-<div class="hint" data-title="🤖 Copilot for Observability Code">
+<details>
+<summary>🤖 Copilot for Observability Code (click to expand)</summary>
 
-> **Use Copilot to add tracing instrumentation:**
->
-> 1. **Ask for best practices**:
->    ```
->    @workspace How should I configure OpenTelemetry with Azure Monitor 
->    for my Agent Framework application?
->    ```
->
-> 2. **Generate span code**: Select your async function and ask:
->    ```
->    Add OpenTelemetry spans to trace this agent operation with 
->    attributes for user_id, query text, and response length
->    ```
->
-> 3. **Use Azure MCP** (if installed): The Azure MCP server can help with:
->    - Application Insights connection strings
->    - KQL queries for trace analysis
->    - Azure Monitor best practices
+**Use Copilot to add tracing instrumentation:**
 
-</div>
+1. **Ask for best practices**: *"@workspace How should I configure OpenTelemetry with Azure Monitor for my Agent Framework application?"*
+
+2. **Generate span code**: Select your async function and ask *"Add OpenTelemetry spans to trace this agent operation with attributes for user_id, query text, and response length"*
+
+3. **Use Azure MCP** (if installed): The Azure MCP server can help with Application Insights connection strings, KQL queries, and Azure Monitor best practices
+
+</details>
 
 ### 📖 Setting Up Observability
 
@@ -1646,35 +1597,18 @@ Implement evaluation for agent quality and performance.
 - Use Azure AI Foundry evaluators
 - Set up batch testing workflows
 
-<div class="hint" data-title="🤖 Copilot for Test Generation">
+<details>
+<summary>🤖 Copilot for Test Generation (click to expand)</summary>
 
-> **Use Copilot to generate evaluation test cases:**
->
-> 1. **Generate test dataset**: In Agent mode:
->    ```
->    Generate 10 diverse test cases for IT helpdesk ticket analysis.
->    Include edge cases for each severity level (low, medium, high, critical)
->    and each category (network, hardware, software, access).
->    Format as Python dict with input, expected_category, expected_severity.
->    ```
->
-> 2. **Improve failing tests**: Paste your evaluation results and ask:
->    ```
->    These test cases are failing. Analyze the pattern and suggest 
->    improvements to my agent's instructions to fix them.
->    ```
->
-> 3. **Create evaluation prompt** - Add `.github/prompts/evaluate-agent.prompt.md`:
->    ```markdown
->    ---
->    description: 'Run agent evaluation'
->    tools: ['runCommands', 'codebase']
->    ---
->    Run the evaluation script and analyze the results.
->    Suggest improvements for any failing test cases.
->    ```
+**Use Copilot to generate evaluation test cases:**
 
-</div>
+1. **Generate test dataset**: In Agent mode, ask Copilot to *"Generate 10 diverse test cases for IT helpdesk ticket analysis. Include edge cases for each severity level and category. Format as Python dict with input, expected_category, expected_severity."*
+
+2. **Improve failing tests**: Paste your evaluation results and ask: *"These test cases are failing. Analyze the pattern and suggest improvements to my agent's instructions to fix them."*
+
+3. **Create evaluation prompt** - Add `.github/prompts/evaluate-agent.prompt.md` with description *"Run agent evaluation"* and tools like `runCommands` and `codebase`.
+
+</details>
 
 ### 📖 Local Evaluation
 
@@ -1846,34 +1780,20 @@ Add conversation persistence with Azure Managed Redis.
 - Implement thread persistence
 - Enable cross-session memory
 
-<div class="hint" data-title="🤖 Copilot for Redis Integration">
+<details>
+<summary>🤖 Copilot for Redis Integration (click to expand)</summary>
 
-> **Use Copilot to implement persistence patterns:**
->
-> 1. **Ask about Redis patterns**:
->    ```
->    @workspace How do I configure RedisChatMessageStore with Agent 
->    Framework for conversation persistence?
->    ```
->
-> 2. **Debug connection issues**: Paste error and ask:
->    ```
->    I'm getting this Redis connection error. What's wrong with my 
->    connection string and how do I fix it?
->    ```
->
-> 3. **Generate Redis utilities**: In Edit mode:
->    ```
->    Add helper functions for:
->    - Testing Redis connectivity
->    - Listing all conversation threads for a user
->    - Clearing old conversations (TTL-based cleanup)
->    ```
->
-> **Azure MCP tip**: If you have Azure MCP server configured, ask:
-> `What Redis SKU is deployed in my subscription?`
+**Use Copilot to implement persistence patterns:**
 
-</div>
+1. **Ask about Redis patterns**: *"@workspace How do I configure RedisChatMessageStore with Agent Framework for conversation persistence?"*
+
+2. **Debug connection issues**: Paste the error and ask *"I'm getting this Redis connection error. What's wrong with my connection string and how do I fix it?"*
+
+3. **Generate Redis utilities**: In Edit mode, ask *"Add helper functions for testing Redis connectivity, listing all conversation threads for a user, and clearing old conversations with TTL-based cleanup"*
+
+**Azure MCP tip**: If you have Azure MCP server configured, ask *"What Redis SKU is deployed in my subscription?"*
+
+</details>
 
 ### 📖 Redis Context Provider
 
@@ -2129,30 +2049,18 @@ We want to make this workshop better! Your feedback is invaluable.
 
 </div>
 
-<div class="hint" data-title="🤖 Use GitHub Copilot to Report Issues">
+<details>
+<summary>🤖 Use GitHub Copilot to Report Issues (click to expand)</summary>
 
-> **If you have the GitHub MCP Server configured, you can create issues directly from Copilot:**
->
-> 1. **Report a bug you encountered**:
->    ```
->    Create a GitHub issue in the hands-on-lab-agent-framework-on-azure repo 
->    for a bug I found in Module 3: [describe the issue]
->    Include steps to reproduce and error messages.
->    ```
->
-> 2. **Suggest an improvement**:
->    ```
->    Create a feature request issue for adding [your idea] 
->    to the Agent Framework workshop
->    ```
->
-> 3. **Ask about existing issues**:
->    ```
->    Are there any open issues in the workshop repo related to 
->    Redis connection problems?
->    ```
+**If you have the GitHub MCP Server configured, you can create issues directly from Copilot:**
 
-</div>
+1. **Report a bug you encountered**: Ask Copilot *"Create a GitHub issue in the hands-on-lab-agent-framework-on-azure repo for a bug I found in Module 3: [describe the issue]. Include steps to reproduce and error messages."*
+
+2. **Suggest an improvement**: Ask *"Create a feature request issue for adding [your idea] to the Agent Framework workshop"*
+
+3. **Ask about existing issues**: Ask *"Are there any open issues in the workshop repo related to Redis connection problems?"*
+
+</details>
 
 <div class="info" data-title="Feedback">
 
