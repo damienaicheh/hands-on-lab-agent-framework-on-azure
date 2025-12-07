@@ -1980,32 +1980,56 @@ Congratulations! 🎉 You have built a complete **Helpdesk Ops Assistant** with:
 
 ### 🏗️ Architecture Summary
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                     User Request                             │
-└─────────────────────────┬───────────────────────────────────┘
-                          │
-                          ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    ORCHESTRATOR                              │
-│            (Routes to appropriate workflow)                  │
-└─────────────────────────┬───────────────────────────────────┘
-                          │
-          ┌───────────────┼───────────────┐
-          │               │               │
-          ▼               ▼               ▼
-    ┌──────────┐    ┌──────────┐    ┌──────────────┐
-    │  Simple  │    │  Group   │    │  Escalation  │
-    │  Flow    │    │  Chat    │    │  Flow        │
-    └──────────┘    └──────────┘    └──────────────┘
-                          │
-              ┌───────────┴───────────┐
-              ▼                       ▼
-        ┌──────────┐            ┌──────────┐
-        │  Learn   │            │  GitHub  │
-        │  Agent   │            │  Agent   │
-        │ (MCP)    │            │ (MCP)    │
-        └──────────┘            └──────────┘
+```mermaid
+flowchart TB
+    subgraph Input["📥 Input"]
+        A[("👤 User Request")]
+    end
+    
+    subgraph Orchestration["🎯 Orchestration Layer"]
+        B{"🧠 Orchestrator<br/>Routes to workflow"}
+    end
+    
+    subgraph Workflows["⚡ Workflow Patterns"]
+        C["⚡ Simple Flow<br/>Quick Resolution"]
+        D["👥 Group Chat<br/>Collaborative"]
+        E["🚨 Escalation<br/>Complex Issues"]
+    end
+    
+    subgraph Agents["🤖 Specialized Agents"]
+        F["📚 Learn Agent<br/>MCP: MS Learn"]
+        G["🐙 GitHub Agent<br/>MCP: GitHub"]
+    end
+    
+    subgraph Services["☁️ Azure Services"]
+        H[("🔍 AI Search")]
+        I[("💾 Redis")]
+        J[("📊 App Insights")]
+    end
+    
+    A --> B
+    B --> C
+    B --> D
+    B --> E
+    D --> F
+    D --> G
+    F -.-> H
+    G -.-> H
+    C -.-> I
+    D -.-> I
+    E -.-> I
+    B -.-> J
+    
+    style A fill:#0078D4,stroke:#005A9E,color:#fff
+    style B fill:#50E6FF,stroke:#0078D4,color:#000
+    style C fill:#92C353,stroke:#6B9B37,color:#fff
+    style D fill:#92C353,stroke:#6B9B37,color:#fff
+    style E fill:#F25022,stroke:#C42D17,color:#fff
+    style F fill:#FFB900,stroke:#CC9400,color:#000
+    style G fill:#FFB900,stroke:#CC9400,color:#000
+    style H fill:#0078D4,stroke:#005A9E,color:#fff
+    style I fill:#0078D4,stroke:#005A9E,color:#fff
+    style J fill:#0078D4,stroke:#005A9E,color:#fff
 ```
 
 ### 📚 Additional Resources
