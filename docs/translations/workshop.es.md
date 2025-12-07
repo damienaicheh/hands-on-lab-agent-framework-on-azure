@@ -42,7 +42,7 @@ sections_title:
 - 🔍 **Azure AI Search** para conocimientos FAQ de la empresa
 - 🔧 **Servidores MCP** para gestión de tickets GitHub y documentación Microsoft Learn
 - 🤖 **Orquestación multi-agentes** con Microsoft Agent Framework
-- 📊 **Observabilidad** con OpenTelemetry y Azure AI Foundry
+- 📊 **Observabilidad** con OpenTelemetry y Microsoft Foundry
 
 ## 🎯 Escenario: Asistente Helpdesk Ops
 
@@ -232,7 +232,7 @@ pip install agent-framework[azure,redis,viz] --pre
 
 - Una suscripción Azure activa con rol **Owner** o **Contributor**
 - Cuota suficiente para los siguientes servicios:
-  - Azure AI Foundry
+  - Microsoft Foundry
   - Azure AI Search
   - Azure Managed Redis
   - Modelos Azure OpenAI (GPT-4o recomendado)
@@ -363,7 +363,7 @@ En este módulo, descubrirás Microsoft Agent Framework y crearás tu primer age
 ### 🎯 Objetivos de Aprendizaje
 
 - Entender los conceptos fundamentales de Agent Framework
-- Crear un agente básico con Azure AI Foundry
+- Crear un agente básico con Microsoft Foundry
 - Ejecutar el agente y manejar respuestas
 
 ### 📖 Conceptos Clave
@@ -452,7 +452,7 @@ python src/module1_simple_agent.py
 >
 > 1. **DefaultAzureCredential falla**: Asegúrate de estar conectado con `az login`
 > 2. **Endpoint no encontrado**: Verifica que `AZURE_OPENAI_ENDPOINT` esté correctamente definido (debe empezar con `https://`)
-> 3. **Deployment no encontrado**: Verifica que el nombre del deployment coincida exactamente en Azure AI Foundry
+> 3. **Deployment no encontrado**: Verifica que el nombre del deployment coincida exactamente en Microsoft Foundry
 > 4. **403 Forbidden**: Tu cuenta Azure podría no tener acceso al recurso OpenAI
 >
 > **Depurar la cadena de credenciales:**
@@ -502,7 +502,7 @@ python src/module1_simple_agent.py
 
 #### Azure AI & Observabilidad
 
-- [Azure AI Foundry](https://learn.microsoft.com/es-es/azure/ai-studio/)
+- [Microsoft Foundry](https://learn.microsoft.com/es-es/azure/ai-studio/)
 - [Trazar Agentes con Azure AI SDK](https://learn.microsoft.com/es-es/azure/ai-foundry/how-to/develop/trace-agents-sdk?view=foundry-classic)
 - [Model Context Protocol](https://modelcontextprotocol.io/)
 

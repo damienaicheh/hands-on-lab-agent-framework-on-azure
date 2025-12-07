@@ -9,7 +9,7 @@ A mini-helpdesk powered by AI agents that processes internal tickets using:
 - 🔍 **Azure AI Search** for enterprise FAQ knowledge
 - 🔧 **MCP Servers** for GitHub ticketing and Microsoft Learn documentation
 - 🤖 **Multi-agent orchestration** with Microsoft Agent Framework
-- 📊 **Observability** with OpenTelemetry and Azure AI Foundry
+- 📊 **Observability** with OpenTelemetry and Microsoft Foundry
 
 ## 📚 Workshop
 

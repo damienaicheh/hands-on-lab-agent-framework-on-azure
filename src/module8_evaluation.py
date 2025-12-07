@@ -1,7 +1,7 @@
 """Module 8: Evaluation - Testing agent quality.
 
 This module demonstrates how to implement evaluation for agent
-quality and performance using local tests and Azure AI Foundry evaluators.
+quality and performance using local tests and Microsoft Foundry evaluators.
 """
 import asyncio
 import os

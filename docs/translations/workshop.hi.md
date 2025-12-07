@@ -42,7 +42,7 @@ sections_title:
 - 🔍 **Azure AI Search** - कंपनी FAQ knowledge के लिए
 - 🔧 **MCP Servers** - GitHub ticket management और Microsoft Learn documentation के लिए
 - 🤖 **Multi-agent Orchestration** - Microsoft Agent Framework के साथ
-- 📊 **Observability** - OpenTelemetry और Azure AI Foundry के साथ
+- 📊 **Observability** - OpenTelemetry और Microsoft Foundry के साथ
 
 ## 🎯 परिदृश्य: Helpdesk Ops Assistant
 
@@ -232,7 +232,7 @@ pip install agent-framework[azure,redis,viz] --pre
 
 - **Owner** या **Contributor** role के साथ active Azure subscription
 - निम्नलिखित services के लिए पर्याप्त quota:
-  - Azure AI Foundry
+  - Microsoft Foundry
   - Azure AI Search
   - Azure Managed Redis
   - Azure OpenAI models (GPT-4o recommended)
@@ -363,7 +363,7 @@ terraform apply -auto-approve
 ### 🎯 Learning Objectives
 
 - Agent Framework के fundamental concepts समझें
-- Azure AI Foundry के साथ basic agent बनाएं
+- Microsoft Foundry के साथ basic agent बनाएं
 - Agent run करें और responses handle करें
 
 ### 📖 Key Concepts
@@ -452,7 +452,7 @@ python src/module1_simple_agent.py
 >
 > 1. **DefaultAzureCredential fails**: Ensure करें कि आप `az login` से logged in हैं
 > 2. **Endpoint not found**: Verify करें कि `AZURE_OPENAI_ENDPOINT` correctly set है (`https://` से start होना चाहिए)
-> 3. **Deployment not found**: Verify करें कि deployment name Azure AI Foundry में exactly match करता है
+> 3. **Deployment not found**: Verify करें कि deployment name Microsoft Foundry में exactly match करता है
 > 4. **403 Forbidden**: आपके Azure account को OpenAI resource का access नहीं हो सकता
 >
 > **Credential chain debug करें:**
@@ -502,7 +502,7 @@ python src/module1_simple_agent.py
 
 #### Azure AI & Observability
 
-- [Azure AI Foundry](https://learn.microsoft.com/azure/ai-studio/)
+- [Microsoft Foundry](https://learn.microsoft.com/azure/ai-studio/)
 - [Tracing Agents with Azure AI SDK](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/trace-agents-sdk?view=foundry-classic)
 - [Model Context Protocol](https://modelcontextprotocol.io/)
 

@@ -1,7 +1,7 @@
 """Module 7: Observability - Tracing with OpenTelemetry.
 
 This module demonstrates how to enable tracing and monitoring
-with OpenTelemetry and Azure AI Foundry.
+with OpenTelemetry and Microsoft Foundry.
 """
 import asyncio
 import os
