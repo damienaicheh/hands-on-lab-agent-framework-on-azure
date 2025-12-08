@@ -11,12 +11,13 @@ contacts:
   - "@olivMertens"
 duration_minutes: 60
 tags: orchestration, observability, opentelemetry, evaluation, production, handoff
-banner_url: ../assets/banner.jpg
+banner_url: assets/banner.jpg
 navigation_levels: 1
 sections_title:
   - Introduction
   - 🏠 Navigation
   - Code from Parts 1-2
+  - Modules Overview
   - Module 6 - Orchestration
   - Module 7 - Observability
   - Module 8 - Evaluation
@@ -25,7 +26,7 @@ sections_title:
 
 # Part 3: Production Ready
 
-![Workshop Banner](../assets/banner.jpg)
+![Workshop Banner](assets/banner.jpg)
 
 > 🌍 **[← Part 2: Knowledge Integration](/workshop/part2-knowledge.md)** | **[Part 4: Advanced & Resources →](/workshop/part4-advanced.md)**
 

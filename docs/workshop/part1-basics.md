@@ -15,7 +15,7 @@ contacts:
 duration_minutes: 75
 tags: agent framework, azure openai, pydantic, function tools
 navigation_levels: 1
-banner_url: ../assets/banner.jpg
+banner_url: assets/banner.jpg
 sections_title:
   - Introduction
   - 🏠 Navigation
@@ -29,7 +29,7 @@ sections_title:
 
 # Part 1: Getting Started
 
-![Workshop Banner](../assets/banner.jpg)
+![Workshop Banner](assets/banner.jpg)
 
 > 🌍 **[← Back to Workshop Index](/workshop/index.md)** | **[Part 2: Knowledge & Collaboration →](/workshop/part2-knowledge.md)**
 

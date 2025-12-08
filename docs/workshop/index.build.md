@@ -15,7 +15,7 @@ contacts:
 duration_minutes: 300
 tags: microsoft foundry, agent framework, ai search, managed redis, mcp, group chat, orchestration, observability, evaluation
 navigation_levels: 1
-banner_url: ../assets/banner.jpg
+banner_url: assets/banner.jpg
 audience: developers, architects, AI engineers
 sections_title:
   - Introduction

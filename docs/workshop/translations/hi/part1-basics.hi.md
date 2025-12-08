@@ -11,7 +11,7 @@ contacts:
   - "@olivMertens"
 duration_minutes: 70
 tags: prerequisites, terraform, simple-agent, structured-output, tools
-banner_url: ../../assets/banner.jpg
+banner_url: ../assets/banner.jpg
 navigation_levels: 1
 sections_title:
   - परिचय
@@ -26,7 +26,7 @@ sections_title:
 
 # भाग 1: बुनियादी बातें
 
-![वर्कशॉप बैनर](../../assets/banner.jpg)
+![Workshop Banner](../assets/banner.jpg)
 
 > 🌍 **[🏠 वर्कशॉप होम](./index.hi.md)** | **[भाग 2 →](./part2-knowledge.hi.md)**
 

@@ -11,7 +11,7 @@ contacts:
   - "@olivMertens"
 duration_minutes: 70
 tags: agent-framework, azure, setup, agent, streaming, pydantic, outils
-banner_url: ../../assets/banner.jpg
+banner_url: ../assets/banner.jpg
 navigation_levels: 1
 sections_title:
   - Introduction
@@ -26,7 +26,7 @@ sections_title:
 
 # Partie 1 : Les fondamentaux
 
-![Banner Workshop](../../assets/banner.jpg)
+![Workshop Banner](../assets/banner.jpg)
 
 > 🌍 **[🏠 Accueil](./index.fr.md)** | **[Partie 2 : Gestion des connaissances →](./part2-knowledge.fr.md)**
 

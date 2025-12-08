@@ -11,12 +11,13 @@ contacts:
   - "@olivMertens"
 duration_minutes: 55
 tags: rag, ai-search, group-chat, mcp, multi-agente
-banner_url: ../../assets/banner.jpg
+banner_url: ../assets/banner.jpg
 navigation_levels: 1
 sections_title:
   - Introducción
   - 🏠 Navegación
   - Código de la Parte 1
+  - Visión General de Módulos
   - Módulo 4 - Azure AI Search
   - Módulo 5 - Group Chat
   - Parte 2 Completa
@@ -24,7 +25,7 @@ sections_title:
 
 # Parte 2: Integración de Conocimiento
 
-![Banner del Taller](../../assets/banner.jpg)
+![Workshop Banner](../assets/banner.jpg)
 
 > 🌍 **[← Parte 1: Los Fundamentos](./part1-basics.es.md)** | **[Parte 3 →](./part3-production.es.md)**
 

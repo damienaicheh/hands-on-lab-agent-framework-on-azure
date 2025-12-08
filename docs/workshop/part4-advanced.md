@@ -11,20 +11,25 @@ contacts:
   - "@olivMertens"
 duration_minutes: 45
 tags: redis, persistence, architecture, production, resources, conclusion
-banner_url: ../assets/banner.jpg
+banner_url: assets/banner.jpg
 navigation_levels: 1
 sections_title:
   - Introduction
   - 🏠 Navigation
   - Code from Parts 1-3
+  - Modules Overview
   - Module 9 - Redis Integration
   - Conclusion
   - Resources
+  - Copilot Instructions
+  - Help & Feedback
+  - Next Steps
+  - 🎉 Complete
 ---
 
 # Part 4: Advanced & Resources
 
-![Workshop Banner](../assets/banner.jpg)
+![Workshop Banner](assets/banner.jpg)
 
 > 🌍 **[← Part 3: Production Ready](/workshop/part3-production.md)** | **[🏠 Workshop Index](/workshop/index.md)**
 

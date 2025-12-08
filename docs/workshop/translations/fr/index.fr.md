@@ -11,7 +11,7 @@ contacts:
   - "@olivMertens"
 duration_minutes: 180
 tags: agent-framework, azure, ia, multi-agent, mcp, rag
-banner_url: ../../assets/banner.jpg
+banner_url: ../assets/banner.jpg
 navigation_levels: 1
 sections_title:
   - Accueil

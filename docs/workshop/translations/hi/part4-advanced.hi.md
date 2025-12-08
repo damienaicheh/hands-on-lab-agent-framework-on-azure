@@ -11,20 +11,23 @@ contacts:
   - "@olivMertens"
 duration_minutes: 50
 tags: redis, memory, persistence, conclusion
-banner_url: ../../assets/banner.jpg
+banner_url: ../assets/banner.jpg
 navigation_levels: 1
 sections_title:
   - परिचय
   - 🏠 नेविगेशन
   - भाग 1-3 का कोड
+  - मॉड्यूल अवलोकन
   - मॉड्यूल 9 - Redis Integration
   - निष्कर्ष
   - संसाधन
+  - अगले कदम
+  - 🎉 पूर्ण
 ---
 
 # भाग 4: एडवांस्ड फीचर्स
 
-![वर्कशॉप बैनर](../../assets/banner.jpg)
+![Workshop Banner](../assets/banner.jpg)
 
 > 🌍 **[← भाग 3](./part3-production.hi.md)** | **[🏠 होम](./index.hi.md)**
 

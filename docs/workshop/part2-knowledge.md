@@ -15,7 +15,7 @@ contacts:
 duration_minutes: 65
 tags: agent framework, azure ai search, rag, mcp, group chat
 navigation_levels: 1
-banner_url: ../assets/banner.jpg
+banner_url: assets/banner.jpg
 sections_title:
   - Introduction
   - 🏠 Navigation
@@ -27,7 +27,7 @@ sections_title:
 
 # Part 2: Knowledge & Collaboration
 
-![Workshop Banner](../assets/banner.jpg)
+![Workshop Banner](assets/banner.jpg)
 
 > 🌍 **[← Part 1: Getting Started](/workshop/part1-basics.md)** | **[Part 3: Production Ready →](/workshop/part3-production.md)**
 

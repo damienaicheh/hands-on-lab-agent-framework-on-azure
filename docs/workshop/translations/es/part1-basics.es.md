@@ -11,7 +11,7 @@ contacts:
   - "@olivMertens"
 duration_minutes: 70
 tags: requisitos, terraform, agente-simple, salida-estructurada, herramientas
-banner_url: ../../assets/banner.jpg
+banner_url: ../assets/banner.jpg
 navigation_levels: 1
 sections_title:
   - Introducción
@@ -26,7 +26,7 @@ sections_title:
 
 # Parte 1: Los Fundamentos
 
-![Banner del Taller](../../assets/banner.jpg)
+![Workshop Banner](../assets/banner.jpg)
 
 > 🌍 **[🏠 Inicio del Taller](./index.es.md)** | **[Parte 2 →](./part2-knowledge.es.md)**
 

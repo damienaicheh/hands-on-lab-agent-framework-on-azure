@@ -11,7 +11,7 @@ contacts:
   - "@olivMertens"
 duration_minutes: 55
 tags: rag, azure-ai-search, group-chat, mcp, multi-agent
-banner_url: ../../assets/banner.jpg
+banner_url: ../assets/banner.jpg
 navigation_levels: 1
 sections_title:
   - Introduction
@@ -24,7 +24,7 @@ sections_title:
 
 # Partie 2 : Gestion des connaissances
 
-![Banner Workshop](../../assets/banner.jpg)
+![Workshop Banner](../assets/banner.jpg)
 
 > 🌍 **[← Partie 1 : Les fondamentaux](./part1-basics.fr.md)** | **[Partie 3 : Prêt pour la production →](./part3-production.fr.md)**
 
