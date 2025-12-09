@@ -466,6 +466,10 @@ To do so, go to your GitHub account settings, then to **Developer Settings** > *
 - Under **Permissions**, set the following:
   - Issues: `Read and write`
 
+Finally click on **Generate token**.
+
+![github-create-pat](./assets/github-create-pat.png)
+
 Once the token is created, make sure to copy it and paste it inside the `.env` file in the `GITHUB_PAT` environment variable. Also, set the `GITHUB_REPOSITORY` environment variable to the format `owner/repo`, e.g., `your-username/your-forked-repo`.
 
 ### Create the GitHubAgent
@@ -512,6 +516,10 @@ Now, run your agent again:
 ```bash
 uv run python main.py
 ```
+
+Select the GitHubAgent in the Dev UI and ask your first question:
+
+![select-menu-devui](./assets/devui_select_menu.png)
 
 If you ask the agent to create a ticket, it should create a new issue in your GitHub repository!
 
@@ -572,9 +580,7 @@ Now, run your agent again:
 uv run python main.py
 ```
 
-Select the group chat workflow agent in the Dev UI and ask your first question:
 
-![select-menu-devui](./assets/devui_select_menu.png)
 
 You can now interact with the group chat workflow. The manager agent will route your requests to the appropriate agent based on the prompt.
 
