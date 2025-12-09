@@ -288,6 +288,10 @@ or you can also ask a feature request:
 Please add a dark mode to the application to improve user experience during night time usage.
 ```
 
+Open your browser and go to `http://localhost:8090` to access the Dev UI. You should see your agent listed there. Click on it to open the chat interface.
+
+![issue_agent_tool_devui_start.png](./assets/issue_agent_tool_devui_start.png)
+
 If you try to run the agent multiple times, you might hit the rate limit of tokens per minute. If that happens, you will see a 429 error. Just wait a minute and try again.
 
 Also, if you look at the output, the response is always different because the model is generative and non-deterministic by default, but you ask the model to structure the output in a specific format. That's what you will do in the next step.
@@ -345,6 +349,10 @@ uv run python main.py
 
 You should notice that the output is now structured according to the `IssueAnalyzer` class you defined.
 
+As you can see in the Dev UI, the output is now in JSON format, making it easier to parse and use in other agents or systems:
+
+![devui-structured-output](./assets/issue_agent_tool_devui_json.png)
+
 > The final `main.py` file can be found in `solutions/lab_2.py`.
 
 ---
@@ -378,33 +386,17 @@ class TimePerIssueTools:
                 return "8 hours"
             case _:
                 return "Unknown complexity level"
-    
-    def calculate_financial_cost_per_issue(
-        self,
-        complexity: Annotated[Complexity, Field(description="The complexity level of the issue.")],
-    ) -> str:
-        """Calculate the financial cost based on issue complexity."""
-        match complexity:
-            case Complexity.NA:
-                return "$50"
-            case Complexity.LOW:
-                return "$100"
-            case Complexity.MEDIUM:
-                return "$200"
-            case Complexity.HIGH:
-                return "$400"
-            case _:
-                return "Unknown complexity level"
 ```
 
-This class defines a single tool that calculates the estimated time to resolve an issue based on its complexity and also a financial cost based on the complexity. Of course, you can implement more tools as needed, with API calls or other logic.
+This class defines a single tool that calculates the estimated time to resolve an issue based on its complexity. Of course, you can implement more tools as needed, with API calls or other logic.
 
 Now, let's modify the `main.py` file to add this tool to your agent.
 
-First, import the `TimePerIssueTools` class at the top of the file:
+First, add the imports at the top of the file:
 
 ```python
 from tools.time_per_issue_tools import TimePerIssueTools
+from agent_framework import ToolMode
 ```
 
 Then before the agent creation, create an instance of the `TimePerIssueTools` class:
@@ -417,7 +409,24 @@ Inside the agent creation add the tools properties:
 
 ```python
 tool_choice=ToolMode.AUTO,
-tools=[timePerIssueTools.calculate_time_based_on_complexity, timePerIssueTools.calculate_financial_cost_per_issue]
+tools=[timePerIssueTools.calculate_time_based_on_complexity]
+```
+
+Also, let's update the instructions to give more details to the agent on how to use this tool:
+
+```python
+instructions="""
+    You are analyzing issues. 
+    If the ask is a feature request the complexity should be 'NA'.
+    If the issue is a bug, analyze the stack trace and provide the likely cause and complexity level.
+
+    CRITICAL: You MUST use the provided tools for ALL calculations:
+    1. First determine the complexity level
+    2. Use the available tools to calculate time and cost estimates based on that complexity
+    3. Never provide estimates without using the tools first
+
+    Your response should contain only values obtained from the tool calls.
+""",
 ```
 
 Now, run your agent again:
@@ -426,7 +435,9 @@ Now, run your agent again:
 uv run python main.py
 ```
 
-As you can see in the `Tools` tab of Dev UI, the agent used the `calculate_time_based_on_complexity` tool to estimate the time to resolve the issue based on its complexity.
+As you can see in the `Tools` tab of Dev UI, the agent used the `calculate_time_based_on_complexity` tool to estimate the time to resolve the issue based on its complexity. If you look at the **Tools** tab, you should see the tool being called with the complexity level and the estimated time being returned:
+
+![devui-tools-tab](./assets/issue_agent_tool_devui.png)
 
 Your IssueAnalyzerAgent is now more precise and reliable!
 
@@ -513,7 +524,7 @@ To do that you will use a mechanism called Group Chat Workflow provided by the A
 
 This will allow the agents to communicate and collaborate to handle ask in their own chat.
 
-Let's create the `GroupChatBuilder` inside the `main.py` file. 
+Let's create the chat group inside the `main.py` file. 
 
 First import the `GroupChatBuilder` class at the top of the file:
 

@@ -6,9 +6,11 @@ class Complexity(Enum):
     LOW = 1
     MEDIUM = 2
     HIGH = 3
-        
+
+
 class IssueAnalyzer(BaseModel):
     """Information about an issue."""
+
     title: str | None = None
     description: str | None = None
     reason: str | None = None

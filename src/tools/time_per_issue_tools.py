@@ -8,7 +8,7 @@ class TimePerIssueTools:
         self,
         complexity: Annotated[Complexity, Field(description="The complexity level of the issue.")],
     ) -> str:
-        """Calculate the time required based on issue complexity."""
+        """Calculate the time required to fix the issue based on the complexity."""
         match complexity:
             case Complexity.NA:
                 return "1 hour"
@@ -18,22 +18,5 @@ class TimePerIssueTools:
                 return "4 hours"
             case Complexity.HIGH:
                 return "8 hours"
-            case _:
-                return "Unknown complexity level"
-    
-    def calculate_financial_cost_per_issue(
-        self,
-        complexity: Annotated[Complexity, Field(description="The complexity level of the issue.")],
-    ) -> str:
-        """Calculate the financial cost based on issue complexity."""
-        match complexity:
-            case Complexity.NA:
-                return "$50"
-            case Complexity.LOW:
-                return "$100"
-            case Complexity.MEDIUM:
-                return "$200"
-            case Complexity.HIGH:
-                return "$400"
             case _:
                 return "Unknown complexity level"
