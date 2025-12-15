@@ -48,28 +48,43 @@ Classic NLP/ML can be a great choice when you have stable categories and lots of
 You will create a coordinated system of three specialized agents working together:
 
 ```text
-                     +----------------------+
-User / Prompt  ----> |  Agent Orchestration |
-                     | (Workflow / Group)   |
-                     +----------+-----------+
-                                |
-                +---------------+----------------+
-                |                                |
-                v                                v
-     +---------------------+          +---------------------+
-     |  IssueAnalyzerAgent |          |      DocsAgent      |
-     | (Pydantic outputs + |          | (MCP: mslearn)      |
-     |  native tools)      |          +----------+----------+
-     +----------+----------+                     |
-                |                                |
-                +---------------+----------------+
-                                |
-                                v
-                     +----------------------+
-                     |      GitHubAgent     |
-                     |   (MCP: GitHub)      |
-                     | create/update issues |
-                     +----------------------+
+User / Prompt
+    |
+    v
+                 +-----------------------------+
+                 |      Agent Orchestration    |
+                 |  (Workflow / Group Chat)    |
+                 +------+-----------+----------+
+                       |           |
+             routes to   |           |   routes to
+                       v           v
+    +---------------------+           +---------------------+
+    |  IssueAnalyzerAgent |           |      DocsAgent      |
+    | (Pydantic outputs + |           |    (MCP: mslearn)   |
+    |  native tools)      |           +----------+----------+
+    +----------+----------+                      |
+             |                                 | MCP calls
+             | native tools                    v
+             v                       +----------------------+
+    +---------------------+            |   Microsoft Learn     |
+    |  Local tool calls   |            +----------------------+
+    | (time estimates...) |
+    +---------------------+
+                       \
+                        \
+                        v
+                 +---------------------+
+                 |      GitHubAgent    |
+                 |     (MCP: GitHub)   |
+                 |  create/update      |
+                 |      issues         |
+                 +----------+----------+
+                          |
+                          | MCP calls
+                          v
+                      +-----------+
+                      |   GitHub  |
+                      +-----------+
 ```
 
 **IssueAnalyzerAgent**  
