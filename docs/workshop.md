@@ -64,46 +64,44 @@ Classic NLP/ML can be a great choice when you have stable categories and lots of
 
 ### The Multi-Agent Architecture
 
-You will create a coordinated system of three specialized agents working together:
+You will create a multi-agent system built as a **sequence**: first the DocsAgent retrieves relevant documentation, then a **group chat** (managed by an orchestrator agent) coordinates the IssueAnalyzerAgent and GitHubAgent to complete the task.
 
 ```text
 User / Prompt
-    |
-    v
-                 +-----------------------------+
-                 |      Agent Orchestration    |
-                 |  (Workflow / Group Chat)    |
-                 +------+-----------+----------+
-                       |           |
-             routes to   |           |   routes to
-                       v           v
-    +---------------------+           +---------------------+
-    |  IssueAnalyzerAgent |           |      DocsAgent      |
-    | (Pydantic outputs + |           |    (MCP: mslearn)   |
-    |  native tools)      |           +----------+----------+
-    +----------+----------+                      |
-             |                                 | MCP calls
-             | native tools                    v
-             v                       +----------------------+
-    +---------------------+            |   Microsoft Learn     |
-    |  Local tool calls   |            +----------------------+
-    | (time estimates...) |
-    +---------------------+
-                       \
-                        \
-                        v
-                 +---------------------+
-                 |      GitHubAgent    |
-                 |     (MCP: GitHub)   |
-                 |  create/update      |
-                 |      issues         |
-                 +----------+----------+
-                          |
-                          | MCP calls
-                          v
-                      +-----------+
-                      |   GitHub  |
-                      +-----------+
+        |
+        v
+    Step 1 (Sequential): Documentation lookup
+        |
+        v
+    +---------------------+            +----------------------+
+    |      DocsAgent      | --MCP-->   |   Microsoft Learn     |
+    |    (MCP: mslearn)   |            +----------------------+
+    +----------+----------+
+                         |
+                         | Relevant docs/context
+                         v
+    Step 2 (Group Chat): Execution managed by an Orchestrator
+        |
+        v
+                     +-----------------------------+
+                     |      Orchestrator Agent     |
+                     |   (Group Chat / Manager)    |
+                     +------+-----------+----------+
+                            |           |
+                            | routes    | routes
+                            v           v
+        +---------------------+     +---------------------+
+        |  IssueAnalyzerAgent |     |      GitHubAgent    |
+        | (Pydantic outputs + |     |     (MCP: GitHub)   |
+        |  native tools)      |     |  create/update      |
+        +----------+----------+     |      issues         |
+                   |                +----------+----------+
+                   | native tools              |
+                   v                          | MCP calls
+        +---------------------+               v
+        |  Local tool calls   |           +-----------+
+        | (time estimates...) |           |   GitHub  |
+        +---------------------+           +-----------+
 ```
 
 **IssueAnalyzerAgent**  
