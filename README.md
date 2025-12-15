@@ -24,7 +24,7 @@ You can use the provided dev container configuration to set up a consistent deve
 | **Git** | Version control | [Install](https://learn.microsoft.com/devops/develop/git/install-and-set-up-git) |
 | **VS Code** | Code editor | [Download](https://code.visualstudio.com/download) |
 
-**Quick install (Windows PowerShell):**
+**Quick install (Windows PowerShell — run as Administrator):**
 
 ```powershell
 winget install -e --id Microsoft.AzureCLI
