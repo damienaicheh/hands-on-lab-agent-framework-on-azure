@@ -271,7 +271,7 @@ First, you need to initialize the terraform infrastructure by running the follow
 </div>
 
 ```bash
-# Set the subscription ID as an environment variable
+# Run the following line which will dynamically set the subscription ID as an environment variable:
 export ARM_SUBSCRIPTION_ID=$(az account show --query id -o tsv)
 
 # Initialize terraform
