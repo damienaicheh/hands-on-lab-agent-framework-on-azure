@@ -254,22 +254,6 @@ az provider register --namespace 'Microsoft.CognitiveServices'
 
 First, you need to initialize the terraform infrastructure by running the following command:
 
-<div class="tip" data-title="Local Devcontainer note (Terraform chmod error)">
-
-> If you're using the **local Devcontainer** and Terraform fails during `terraform init` with `chmod ... operation not permitted`, your repository is likely mounted from a host filesystem that doesn't support Linux permission changes.
->
-> To make `terraform init` work reliably, store Terraform's internal working data on a Linux filesystem path inside the container (for example `/vscode`):
->
-> ```bash
-> mkdir -p /vscode/tfdata/plugin-cache
-> cd infra
-> export TF_DATA_DIR=/vscode/tfdata/infra
-> export TF_PLUGIN_CACHE_DIR=/vscode/tfdata/plugin-cache
-> terraform init
-> ```
-
-</div>
-
 ```bash
 # Run the following line which will dynamically set the subscription ID as an environment variable:
 export ARM_SUBSCRIPTION_ID=$(az account show --query id -o tsv)
@@ -321,8 +305,7 @@ Inside the `src` folder, you will find at root the `pyproject.toml` file that de
 cd src
 # Install dependencies
 #add venv env
-uv venv .venv
-uv sync --active
+uv sync
 # Activate the virtual environment
 source .venv/bin/activate
 ```
@@ -417,7 +400,7 @@ Now if you run your agent again:
 </div>
 
 ```bash
-uv run --active python main.py
+uv run python main.py
 ```
 
 Let's run the agent with a simple prompt to analyze a first ask:
@@ -506,7 +489,7 @@ from models.issue_analyzer import IssueAnalyzer
 You can now run your agent again:
 
 ```bash
-uv run --active python main.py
+uv run python main.py
 ```
 
 
@@ -605,7 +588,7 @@ instructions="""
 Now, run your agent again:
 
 ```bash
-uv run --active python main.py
+uv run python main.py
 ```
 
 <div class="tip" data-title="Tip: stop an old run before relaunching">
@@ -761,7 +744,7 @@ serve(entities=[issue_analyzer_agent, github_agent], port=8090, auto_open=True, 
 Now, run your agent again:
 
 ```bash
-uv run --active python main.py
+uv run python main.py
 ```
 
 Select the GitHubAgent in the Dev UI and ask your first question:
@@ -824,7 +807,7 @@ serve(entities=[issue_analyzer_agent, github_agent, group_workflow], port=8090, 
 Now, run your agent again:
 
 ```bash
-uv run --active python main.py
+uv run python main.py
 ```
 
 Select the group chat workflow agent in the Dev UI and ask your first question:
@@ -901,7 +884,7 @@ serve(entities=[issue_analyzer_agent, github_agent, ms_learn_agent, workflow], p
 Finally, run your agent again:
 
 ```bash
-uv run --active python main.py
+uv run python main.py
 ```
 
 Select the sequential workflow agent in the Dev UI and ask your first question:
