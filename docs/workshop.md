@@ -1,9 +1,9 @@
 ---
 published: true
 type: workshop
-title: Product Hands-on Lab - Agent Framework on Azure
+title: Product Hands-on Lab - Microsoft Agent Framework on Azure
 short_title: Agent Framework on Azure
-description: This workshop will cover how to build agentic applications using the Agent Framework on Azure, leveraging various Azure services to create scalable and efficient solutions.
+description: This workshop will cover how to build agentic applications using the Microsoft Agent Framework on Azure, leveraging various Azure services to create scalable and efficient solutions.
 level: beginner # Required. Can be 'beginner', 'intermediate' or 'advanced'
 navigation_numbering: true
 authors: # Required. You can add as many authors as needed
@@ -22,9 +22,9 @@ audience: developers, architects, AI engineers
 
 ---
 
-# Product Hands-on Lab - Agent Framework on Azure
+# Product Hands-on Lab - Microsoft Agent Framework on Azure
 
-Welcome to this hands-on lab! In this workshop, you will learn how to build agentic applications using the Agent Framework on Azure. this workshop is available in Python, but don't forget that the Agent Framework is also available in C#.
+Welcome to this hands-on lab! In this workshop, you will learn how to build agentic applications using the Agent Framework on Azure. This workshop is available in Python, but don't forget that the *Microsoft Agent Framework* is also available in C#.
 
 ## What You Will Learn
 
@@ -33,6 +33,7 @@ In this hands-on lab, you will build a **Helpdesk Ops Assistant** powered by AI 
 But firstly what's an AI agent?
 
 An **AI agent** is a software component that uses a generative AI model to understand an input (a user request, an event, or another agent message), reason about what to do next, and then **take actions**.
+
 In practice, an agent becomes useful when it can combine:
 
 - **Knowledge** (for example, retrieving guidance or documentation)
@@ -42,7 +43,7 @@ In this workshop, you will build multiple agents and orchestrate them so the sys
 
 <div class="tip" data-title="Go deeper">
 
-> If you want a broader (non-code) view of what an AI agent is and how to adopt agents in an organization, read: 
+> If you want a broader (non-code) view of what an AI agent is and how to adopt agents in an organization, read:
 > [AI agent adoption (Cloud Adoption Framework)](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/)
 >
 > It explains what makes agents different from classic RAG (agents decide *which* knowledge and tools to use step-by-step), outlines the core building blocks (model, instructions, retrieval/knowledge, actions/tools, memory), and provides guidance across the lifecycle: **plan**, **govern & secure**, **build**, and **operate** agents.
@@ -54,7 +55,7 @@ In this workshop, you will build multiple agents and orchestrate them so the sys
 
 Helpdesk requests are mostly **unstructured text** (short descriptions, partial context, logs, mixed intents). LLM-based agents work well for this because they can:
 
-- Extract structure from messy inputs (title, summary, root-cause hints) without a dedicated NLP pipeline.
+- Extract structure from messy inputs (title, summary, root-cause hints) without a dedicated Natural Language Processing (NLP) pipeline.
 - Combine reasoning with **tools** (deterministic calculations) and **RAG** (company guidelines, docs) instead of relying on memorized knowledge.
 - Adapt quickly as policies and documentation change (update the knowledge base and prompts, not a trained model).
 
@@ -107,7 +108,7 @@ User / Prompt
 **IssueAnalyzerAgent**  
 Analyzes support tickets using structured data contracts (Pydantic models), determines issue complexity, and provides detailed analysis of bugs and feature requests. This agent uses native tools to calculate accurate time estimates based on complexity levels.
 
-**GitHubAgent (MCP github)**  
+**GitHubAgent (MCP GitHub)**  
 Executes GitHub ticketing actions (creating issues, adding labels, posting comments) based on the analysis provided by other agents. This agent leverages company-specific guidelines through RAG integration with your knowledge base.
 
 **DocsAgent (MCP mslearn)**  
@@ -116,7 +117,8 @@ Queries Microsoft Learn documentation via MCP "mslearn" server to provide releva
 ### Key Technologies
 
 Throughout this workshop, you will:
-- Build agentic applications using **[Agent Framework][agent-framework-url]**
+
+- Build agentic applications using **[Microsoft Agent Framework][agent-framework-url]**
 - Integrate **Microsoft Foundry** for AI model deployment and knowledge management
 - Implement **Retrieval-Augmented Generation (RAG)** with vector stores and Foundry IQ
 - Use **Model Context Protocol (MCP)** servers for GitHub and Microsoft Learn integration
@@ -141,7 +143,7 @@ Before starting this lab, be sure to set your Azure environment :
 
 To retrieve the lab content :
 
-- A Github account (Free, Team or Enterprise)
+- A GitHub account (Free, Team or Enterprise)
 - Create a [fork][repo-fork] of the repository from the **main** branch to help you keep track of your changes
 
 3 development options are available:
@@ -152,51 +154,53 @@ To retrieve the lab content :
 <div class="tip" data-title="Tips">
 
 > To focus on the main purpose of the lab, we encourage the usage of devcontainers/codespace as they abstract the dev environment configuration, and avoid potential local dependencies conflict.
-> 
+>
 > You could decide to run everything without relying on a devcontainer : To do so, make sure you install all the prerequisites detailed below.
 
 </div>
 
 ### 🥇 : Pre-configured GitHub Codespace
 
-To use a Github Codespace, you will need :
+To use a GitHub Codespace, you will need :
+
 - [A GitHub Account][github-account]
 
-Github Codespace offers the ability to run a complete dev environment (Visual Studio Code, Extensions, Tools, Secure port forwarding etc.) on a dedicated virtual machine. 
-The configuration for the environment is defined in the `.devcontainer` folder, making sure everyone gets to develop and practice on identical environments : No more conflict on dependencies or missing tools ! 
+GitHub Codespace offers the ability to run a complete dev environment (Visual Studio Code, Extensions, Tools, Secure port forwarding etc.) on a dedicated virtual machine.
+The configuration for the environment is defined in the `.devcontainer` folder, making sure everyone gets to develop and practice on identical environments : No more conflict on dependencies or missing tools !
 
-Every Github account (even the free ones) grants access to 120 vcpu hours per month, _**for free**_. A 2 vcpu dedicated environment is enough for the purpose of the lab, meaning you could run such environment for 60 hours a month at no cost!
+Every GitHub account (even the free ones) grants access to 120 vcpu hours per month, _**for free**_. A 2 vcpu dedicated environment is enough for the purpose of the lab, meaning you could run such environment for 60 hours a month at no cost!
 
-To get your codespace ready for the labs, here are a few steps to execute : 
+To get your codespace ready for the labs, here are a few steps to execute :
+
 - After you forked the repo, click on `<> Code`, `Codespaces` tab and then click on the `+` button:
 
 ![codespace-new](./assets/codespace-new.png)
 
-- You can also provision a beefier configuration by defining creation options and select the **Machine Type** you like : 
+- You can also provision a beefier configuration by defining creation options and select the **Machine Type** you like :
 
 ![codespace-configure](./assets/codespace-configure.png)
 
 ### 🥈 : Using a local Devcontainer
 
 This repo comes with a Devcontainer configuration that will let you open a fully configured dev environment from your local Visual Studio Code, while still being completely isolated from the rest of your local machine configuration : No more dependancy conflict.
-Here are the required tools to do so : 
+Here are the required tools to do so :
 
-- [Git client][git-client] 
+- [Git client][git-client]
 - [Docker Desktop][docker-desktop] running
 - [Visual Studio Code][vs-code] installed on your machine
 
 Start by cloning the repository you just forked on your local Machine and open the local folder in Visual Studio Code.
 Once you have cloned the repository locally, make sure Docker Desktop is up and running and open the cloned repository in Visual Studio Code.  
 
-You will be prompted to open the project in a Dev Container. Click on `Reopen in Container`. 
+You will be prompted to open the project in a Dev Container. Click on `Reopen in Container`.
 
-If you are not prompted by Visual Studio Code, you can open the command palette (`Ctrl + Shift + P`) and search for `Reopen in Container` and select it: 
+If you are not prompted by Visual Studio Code, you can open the command palette (`Ctrl + Shift + P`) and search for `Reopen in Container` and select it:
 
 ![devcontainer-reopen](./assets/devcontainer-reopen.png)
 
 ### 🥉 : Using your own local environment
 
-The following tools and access will be necessary to run the lab on a local environment :  
+The following tools and access will be necessary to run the lab on a local environment:  
 
 <div class="tip" data-title="Windows note">
 
@@ -204,7 +208,7 @@ The following tools and access will be necessary to run the lab on a local envir
 
 </div>
 
-- [Git client][git-client] 
+- [Git client][git-client]
 - [Visual Studio Code][vs-code] installed
 - [Azure CLI][az-cli-install] installed on your machine
 - [Python 3.13][download-python] installed on your machine
@@ -223,7 +227,7 @@ Visual Studio Code Extensions to install :
 - [ms-python.debugpy][ms-python-debugpy-extension]
 - [hashicorp.terraform][hashicorp-terraform-extension]
 
-Once you have set up your local environment, you can clone the repository you just forked on your machine, and open the local folder in Visual Studio Code and head to the next step. 
+Once you have set up your local environment, you can clone the repository you just forked on your machine, and open the local folder in Visual Studio Code and head to the next step.
 
 ### Sign in to Azure
 
@@ -314,13 +318,11 @@ Then, rename the `.env.template` file to `.env` and update the environment varia
 
 To connect to the AI chat model you need, you will use the Microsoft Foundry project resource to connect to the deployed models.
 
-
-
-Go to [Azure Portal](https://portal.azure.com/#browse/all), inside your resource group, select the Microsoft Foundry project: 
+Go to [Azure Portal](https://portal.azure.com/#browse/all), inside your resource group, select the Microsoft Foundry project:
 
 [![resource-group-foundry-project](./assets/resource-group-foundry-project.png)](./assets/resource-group-foundry-project.png)
 
-Then select `Go to Foundry portal`: 
+Then select `Go to Foundry portal`:
 
 ![open-foundry-project](./assets/open-foundry-project.png)
 
@@ -328,17 +330,17 @@ You will be redirected to the home page of Microsoft Foundry Portal where you wi
 
 <div class="tip" data-title="Microsoft Foundry portal">
 
-> you can also directly go the portal with this : [Microsoft Foundry](https://ai.azure.com/)
+> you can also directly go to the portal with this : [Microsoft Foundry](https://ai.azure.com/)
 
 </div>
 
 ![foundry-project-endpoint](./assets/foundry-project-endpoint.png)
 
-Then assign it's value inside the `.env` file in the `AZURE_AI_PROJECT_ENDPOINT` environment variable. 
+Then assign its value inside the `.env` file in the `AZURE_AI_PROJECT_ENDPOINT` environment variable.
 
-When it's done, due to the role assigned to you on this cloud resource, you can have access to the models with your code. 
+When it's done, due to the role assigned to you on this cloud resource, you can have access to the models with your code.
 
-Now let's create your first agent! 
+Now let's create your first agent!
 
 Inside `main.py` first, define the structure of the file and load the `.env` file and add the imports:
 
@@ -391,6 +393,14 @@ Let's modify the `main.py` file to add Dev UI integration just after the agent c
 serve(entities=[issue_analyzer_agent], port=8090, auto_open=True, tracing_enabled=True)
 ```
 
+<details>
+<summary><strong>Information (optional): Dev ui </strong></summary>
+
+If you want to discover more about Dev UI, you can follow the official tutorial:
+[Dev UI on Microsoft Learn](https://learn.microsoft.com/en-us/agent-framework/user-guide/devui/?pivots=programming-language-python)
+
+</details>
+
 Now if you run your agent again:
 
 <div class="tip" data-title="Tip">
@@ -426,30 +436,23 @@ or you can also ask a feature request:
 Please add a dark mode to the application to improve user experience during night time usage.
 ```
 
-Open your browser and go to `http://localhost:8090` to access the Dev UI. You should see your agent listed there. Click on it to open the chat interface.
+Open your browser and go to `http://localhost:8090` to access the Dev UI. You should see your agent listed there (in the dropdown list at the top of your screen). Click on it to open the chat interface.
 
 [![issue_agent_tool_devui_start.png](./assets/issue_agent_tool_devui_start.png)](./assets/issue_agent_tool_devui_start.png)
 
-If you try to run the agent multiple times, you might hit the rate limit of tokens per minute. If that happens, you will see a 429 error. Just wait a minute and try again.
+If you try to run the agent multiple times, you might hit the rate limit of tokens per minute. If that happens, you will see a 429 error. Just wait a minute or two and try again.
 
 Also, if you look at the output, the response is always different because the model is generative and non-deterministic by default, but you ask the model to structure the output in a specific format. That's what you will do in the next step.
 
 > The final `main.py` file can be found in `solutions/lab_1.py`.
 
-<details>
-<summary><strong>Information (optional): Dev ui </strong></summary>
-
-If you want to discover more about Dev UI, you can follow the official tutorial:
-[Dev UI on Microsoft Learn](https://learn.microsoft.com/en-us/agent-framework/user-guide/devui/?pivots=programming-language-python)
-
-</details>
-
 ---
+
 ## Add response format
 
-Let's structure the output of your agent to make it more useful.
+Let's structure the output of your agent to make it more useful and more programmatic.
 
-To make sure the IssueAnalyzerAgent provide the same structure every time, let's define a response format using a basic python class.
+To make sure the *IssueAnalyzerAgent* provide the same structure every time, let's define a response format using a basic python class.
 
 Inside the `src` folder, create a new folder called `models` and inside this folder create a new file called `issue_analyzer.py`.
 
@@ -474,7 +477,7 @@ class IssueAnalyzer(BaseModel):
 
 As you can see, the `IssueAnalyzer` class defines multiple fields that the agent will fill when answering a prompt.
 
-Now, let's modify the `main.py` file to use this response format. Inside the creation of the agent, add the `response_format` parameter:
+Now, let's modify the `main.py` file to use this response format. Inside the creation of the agent (just after you gave its instructions), add the `response_format` parameter:
 
 ```python
 response_format=IssueAnalyzer
@@ -492,7 +495,19 @@ You can now run your agent again:
 uv run python main.py
 ```
 
+<div class="tip" data-title="Tip: stop an old run before relaunching">
 
+> If you already ran `uv run python main.py`, Dev UI may still be running in another terminal.
+> Stop it with `Ctrl+C`, then run the command again.
+>
+> If the port is still busy, find and kill the process using port `8090`:
+>
+> ```bash
+> lsof -i :8090
+> kill <pid>
+> ```
+
+</div>
 
 You should notice that the output is now structured according to the `IssueAnalyzer` class you defined.
 
@@ -506,6 +521,7 @@ As you can see in the Dev UI, the output is now in JSON format, making it easier
 <summary><strong>Information (optional): Structured output tutorial</strong></summary>
 
 This lab uses structured output with Pydantic models. If you want to go deeper, follow the official tutorial:
+
 - [Structured output with Pydantic models on Microsoft Learn](https://learn.microsoft.com/en-us/agent-framework/tutorials/agents/structured-output?pivots=programming-language-python)
 
 </details>
@@ -515,7 +531,7 @@ This lab uses structured output with Pydantic models. If you want to go deeper, 
 ## Add native tools
 
 If you looked at the output of your agent, you probably noticed that the estimated time to resolve the issue is randomly generated by the model. To make it more accurate, let's add a native tool that will help the agent estimate the time based on the complexity of the issue.
-Don't forget that tools are pieces of code, call for Apis, or calling agents, MCP ... that can be called by the agent to perform specific tasks.
+Don't forget that tools are pieces of code, calls to Apis, or calling agents, MCP ... that can be called by the agent to perform specific tasks.
 
 First, create a new folder called `tools` inside the `src` folder. Then, inside this folder, create a new file called `time_per_issue_tools.py`.
 
@@ -591,20 +607,6 @@ Now, run your agent again:
 uv run python main.py
 ```
 
-<div class="tip" data-title="Tip: stop an old run before relaunching">
-
-> If you already ran `uv run python main.py`, Dev UI may still be running in another terminal.
-> Stop it with `Ctrl+C`, then run the command again.
->
-> If the port is still busy, find and kill the process using port `8090`:
->
-> ```bash
-> lsof -i :8090
-> kill <pid>
-> ```
-
-</div>
-
 <div class="task" data-title="Try it: test the agent within its scope">
 
 > In Dev UI, select **IssueAnalyzerAgent** and try one of the prompts below.
@@ -618,7 +620,7 @@ uv run python main.py
 >   File "<string>", line 38, in <module>
 >     main_application()     - Entry point
 >   File "<string>", line 30, in main_application
->     results = process_data_batch(test_data) - alls processor
+>     results = process_data_batch(test_data) - calls processor
 >   File "<string>", line 13, in process_data_batch
 >     avg = calculate_average(batch)   - Calls calculator
 >   File "<string>", line 5, in calculate_average
@@ -641,7 +643,7 @@ As you can see in the `Tools` tab of Dev UI, the agent used the `calculate_time_
 
 [![devui-tools-tab](./assets/issue_agent_tool_devui.png)](./assets/issue_agent_tool_devui.png)
 
-Your IssueAnalyzerAgent is now more precise and reliable!
+Your *IssueAnalyzerAgent* is now more precise and reliable!
 
 > The final `main.py` file can be found in `solutions/lab_3.py`.
 
@@ -747,7 +749,7 @@ Now, run your agent again:
 uv run python main.py
 ```
 
-Select the GitHubAgent in the Dev UI and ask your first question:
+Select the *GitHubAgent* in the Dev UI and ask your first question:
 
 [![select-menu-devui](./assets/devui_select_menu.png)](./assets/devui_select_menu.png)
 
@@ -759,13 +761,13 @@ If you ask the agent to create an issue about any kind of problem, it should cre
 
 ## Create a group chat workflow
 
-You have now two agents: the IssueAnalyzerAgent to analyze issues and the GitHubAgent to create tickets in GitHub. To build a complete helpdesk solution, you need to orchestrate these two agents to work together in a group chat. 
+You have now two agents: the *IssueAnalyzerAgent* to analyze issues and the *GitHubAgent* to create tickets in GitHub. To build a complete helpdesk solution, you need to orchestrate these two agents to work together in a group chat.
 
 To do that you will use a mechanism called Group Chat Workflow provided by the Agent Framework.
 
-This will allow the agents to communicate and collaborate to handle ask in their own chat.
+This will allow the agents to communicate and collaborate to handle asks in their own chat.
 
-Let's create the chat group inside the `main.py` file. 
+Let's create the chat group inside the `main.py` file.
 
 First import the `GroupChatBuilder` class at the top of the file:
 
@@ -820,11 +822,11 @@ You can now interact with the group chat workflow. The manager agent will route 
 
 ---
 
-## Orchestrate with a sequencial workflow
+## Orchestrate with a sequential workflow
 
-Let's go a step further and add one more agent in the picture. You will add an DocsAgent that will provide relevant documentation from Microsoft Learn to help the agents answer user requests. This agent will use the MCP Learn tool.
+Let's go a step further and add one more agent in the picture. You will add a *DocsAgent* that will provide relevant documentation from Microsoft Learn to help the agents answer user requests. This agent will use the MCP Learn tool.
 
-First, create the DocsAgent inside the `main.py` file. Just after the creation of the GitHubAgent, add the following code:
+First, create the *DocsAgent* inside the `main.py` file. Just after the creation of the GitHubAgent, add the following code:
 
 ```python
 ms_learn_agent = AzureAIAgentClient(**settings).create_agent(
@@ -848,11 +850,11 @@ If you want to test it individually, you can update the Dev UI integration:
 serve(entities=[issue_analyzer_agent, github_agent, ms_learn_agent, group_workflow], port=8090, auto_open=True, tracing_enabled=True)
 ```
 
-As you can see, you dynamically load the MCP Learn tool, without authentication for this one, as it's totally open, and create the agent using this tool.
+As you can see, you dynamically load the MCP Learn tool, without authentication for this one, as it is totally open, and create the agent using this tool.
 
-Then, let's create a sequential workflow that will first, call the DocsAgent and then the group of agents containing the IssueAnalyzerAgent and the GitHubAgent.
+Then, let's create a sequential workflow that will first, call the *DocsAgent* and then the group of agents containing the *IssueAnalyzerAgent* and the *GitHubAgent*.
 
-Let's first transform the workflow containing the IssueAnalyzerAgent and the GitHubAgent into an agent so it can be called inside another workflow.
+Let's first transform the workflow containing the *IssueAnalyzerAgent* and the *GitHubAgent* into an agent so it can be called inside another workflow.
 
 ```python
 group_workflow_agent = group_workflow.as_agent(
@@ -860,7 +862,7 @@ group_workflow_agent = group_workflow.as_agent(
 )
 ```
 
-Then, create the sequential workflow:
+Then, after creating this new agent, create the sequential workflow:
 
 ```python
 workflow = (
@@ -870,10 +872,11 @@ workflow = (
 )
 ```
 
-Add the calling of the sequential in the header 
-````python
+Add the import for the sequential builder at the top of the file:
+
+```python
 from agent_framework import SequentialBuilder
-````
+```
 
 Update the Dev UI setup to run the sequential workflow instead of the group chat workflow:
 
@@ -897,6 +900,7 @@ Select the sequential workflow agent in the Dev UI and ask your first question:
 <summary><strong>Information (optional): pattern of workflow explained </strong></summary>
 
 This lab explained the Group Chat and Sequential Workflows patterns. If you want to go deeper, follow the official samples with the different workflow patterns:
+
 - https://learn.microsoft.com/en-us/agent-framework/user-guide/workflows/orchestrations/overview
 Some samples of workflows are also available in the GitHub repository:
 - https://github.com/microsoft/agent-framework/tree/main/python/samples/getting_started/workflows
@@ -907,12 +911,12 @@ Some samples of workflows are also available in the GitHub repository:
 
 ## Add your own knowledge base with RAG
 
-You now have a complete helpdesk solution with multiple agents working together to handle user requests. However, the GitHubAgent is doing some ticketing without really knowing your company's (named Contoso) conventions and best practices. To improve this, you will add another source of knowledge using Retrieval-Augmented Generation (RAG) with your Microsoft Foundry project.
+You now have a complete helpdesk solution with multiple agents working together to handle user requests. However, the GitHubAgent is doing some ticketing without really knowing your company's (named Contoso) conventions and best practices. To improve this, you will add another source of knowledge using *Retrieval-Augmented Generation* (RAG) with your Microsoft Foundry project.
 
 To do that, you will find a file called `create_data.py` in the `src` folder that will help you create a knowledge base using a file inside the folder `files`.
 
 ```bash
-uv run python src/create_data.py
+uv run python create_data.py
 ```
 
 This will create a managed index for you that will be used as a knowledge base for your GitHubAgent. Look at the console output to get the vector store ID created and set the environment variable `VECTOR_STORE_ID` with this value.
@@ -925,11 +929,11 @@ In the **Knowledge** tab, you should see the managed index made by Foundry IQ cr
 
 [![Managed Index](./assets/foundry-iq-managed-index.png)](./assets/foundry-iq-managed-index.png)
 
-Foundry IQ hide the complexity of managing a knowledge base for you, making it easy to create and maintain. You can also connect other sources of knowledge like Azure AI Search.
+Foundry IQ hide the complexity of managing a knowledge base for you, making it easy to create and maintain. You can also connect other sources of knowledge like [Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search).
 
-Now, let's modify the GitHubAgent to use this knowledge base when answering user requests. Inside the creation of the GitHubAgent, add the following code to create a retrieve the data tool:
+Now, let's modify the *GitHubAgent* to use this knowledge base when answering user requests. Inside the creation of the *GitHubAgent*, add the following code to retrieve the data tool:
 
-First, import the necessary classes at the top of the file:
+First, import the necessary classes at the top of the file `main.py`:
 
 ```python
 from agent_framework import HostedFileSearchTool, HostedVectorStoreContent
@@ -972,8 +976,10 @@ instructions=f"""
 You can now run the project and test the full workflow or the GitHubAgent individually:
 
 ```bash
-uv run python src/create_data.py
+uv run python create_data.py
 ```
+
+You should have issues created with a more profesionnal format (stacktrace, step to reproduce, etc.)
 
 > The final `main.py` file can be found in `solutions/lab_7.py`.
 
@@ -995,7 +1001,7 @@ Then, as a first line of the `main()` function, add the following code to set up
 setup_observability()
 ```
 
-That's it for the Python code! Then update the `.env` file with the Application Insights connection string. You can find it in the Azure Portal inside your resource group, in the Application Insights resource created by the Terraform deployment. 
+That's it for the Python code! Then update the `.env` file with the Application Insights connection string. You can find it in the Azure Portal inside your resource group, in the Application Insights resource created by the Terraform deployment.
 
 [![app-insights-connection-string](./assets/app-insights-connection-string.png)](./assets/app-insights-connection-string.png)
 
@@ -1023,10 +1029,9 @@ You will be able to see the full trace of the agent run, like tool calls, and an
 <summary><strong>Information (optional): OpenTelemetry traces</strong></summary>
 
 If you want to go deeper into observability with the Agent Framework, you can follow the official tutorial on OpenTelemetry traces:
+
 - [Observability for multi-agent systems with Microsoft Agent Framework (TechCommunity)](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/observability-for-multi-agent-systems-with-microsoft-agent-framework-and-azure-a/4469090)
 - [Agent Framework observability sample (GitHub)](https://github.com/microsoft/agent-framework/tree/main/python/samples/getting_started/observability)
-
-
 
 </details>
 
@@ -1036,7 +1041,7 @@ If you want to go deeper into observability with the Agent Framework, you can fo
 
 Once you're done with this lab you can delete the resource group you created at the beginning.
 
-To do so, click on `delete resource group` in the Azure Portal to delete all the resources and audio content at once. The following Az-Cli command can also be used to delete the resource group :
+To do so, click on `delete resource group` in the Azure Portal to delete all the resources at once. The following Az-Cli command can also be used to delete the resource group :
 
 ```bash
 # Delete the resource group with all the resources
@@ -1046,7 +1051,7 @@ az group delete --name <resource-group>
 <details>
 <summary><strong>Information (optional): Time to brag </strong></summary>
 
-If you have finished you gained a GG from our mascott Bits ! 
+If you have finished you gained a GG from our mascot Bits !
 
 [![gg-mascott](./assets/xmasbit.jpeg)](./assets/xmasbit.jpeg)
 
@@ -1059,15 +1064,11 @@ If you have finished you gained a GG from our mascott Bits !
 Congratulations! You have successfully completed this hands-on lab on building agentic applications on Azure using Microsoft Foundry and the Agent Framework SDK. To explore more advanced Agent Framework capabilities, consider checking out the following resources:
 
 **Additional Resources:**
+
 - [Agent framework for beginners](https://aka.ms/ai-agents-beginners)
 - [Get Started with Agent Framework](https://aka.ms/AgentFramework)
 - [Agent Framework Documentation](https://aka.ms/AgentFramework/Docs)
 - [Announcement Blog Agent framework](https://aka.ms/AgentFramework/PuPr)
 - [Watch Sessions On-Demand Agent framework](https://aka.ms/AgentFramework/AIShow)
 - [MCP for Beginners (GitHub)](https://github.com/microsoft/mcp-for-beginners/)
-
 - [MCP overview video (YouTube)](https://www.youtube.com/watch?v=VfZlglOWWZw&t=3s)
-
-
-
-
