@@ -702,7 +702,10 @@ Finally click on **Generate token**.
 
 [![github-create-pat](./assets/github-create-pat.png)](./assets/github-create-pat.png)
 
-Once the token is created, make sure to copy it and paste it inside the `.env` file in the `GITHUB_PAT` environment variable. Also, set the `GITHUB_REPOSITORY` environment variable to the format `owner/repo`, e.g., `your-username/your-forked-repo`.
+Once the token is created, make sure to copy it and paste it inside the `.env` file in the `GITHUB_MCP_PAT` environment variable. Also, set the `GITHUB_REPOSITORY` environment variable to the format `owner/repo`, e.g., `your-username/your-forked-repo`.
+
+Configure the `GITHUB_REPOSITORY` to enable the issues.
+[![github-enable-issues](./assets/github-enable-issues.png)](./assets/github-enable-issues.png)
 
 ### Create the GitHubAgent
 
@@ -919,7 +922,7 @@ To do that, you will find a file called `create_data.py` in the `src` folder tha
 uv run python create_data.py
 ```
 
-This will create a managed index for you that will be used as a knowledge base for your GitHubAgent. Look at the console output to get the vector store ID created and set the environment variable `VECTOR_STORE_ID` with this value.
+This will create a managed index for you that will be used as a knowledge base for your GitHubAgent. Look at the console output to get the vector store ID created and set the environment variable `VECTOR_STORE_ID` with this value in the `.env`file.
 
 To see the index generated, go to your Microsoft Foundry project, select **Build** > **Data** > **Datasets** and you should see the dataset created:
 
@@ -976,7 +979,7 @@ instructions=f"""
 You can now run the project and test the full workflow or the GitHubAgent individually:
 
 ```bash
-uv run python create_data.py
+uv run python main.py
 ```
 
 You should have issues created with a more profesionnal format (stacktrace, step to reproduce, etc.)
@@ -1072,3 +1075,4 @@ Congratulations! You have successfully completed this hands-on lab on building a
 - [Watch Sessions On-Demand Agent framework](https://aka.ms/AgentFramework/AIShow)
 - [MCP for Beginners (GitHub)](https://github.com/microsoft/mcp-for-beginners/)
 - [MCP overview video (YouTube)](https://www.youtube.com/watch?v=VfZlglOWWZw&t=3s)
+
